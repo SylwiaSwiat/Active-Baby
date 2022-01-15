@@ -6,14 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Active Baby</title>
     <link rel="stylesheet" href="style.css">
-    <script src="jquery-2.1.4.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+   
 </head>
 <body>
     <div class="container">
         <div id="menu">
             <nav>
                 <ul>
-                    <li><a href="#">Logo</a> </li>
+                    <li><a href="#">Active Baby</a> </li>
                     <li><a href="#menu">Strona Główna</a></li>
                     <li><a href="#about">O firmie</a> </li>
                     <li><a href="#offer">Oferta</a> </li>
@@ -22,33 +26,147 @@
                 </ul>
             </nav>
            <div class="wrap">
-               <div id="arrowLeft" class="arrow"></div>
+               <div id="arrowLeft" class="arrow">
+                <img src="/arrow left light.png" alt="left arrow">
+               </div>
                <div id="slider">
                 <div class="slide" id="slide1">
 <div class="slideContent">
-    <span>Image One</span>
+    <span></span>
 </div>
                 </div>
                 <div class="slide slide2">
                     <div class="slideContent">
-                        <span>Image Two</span>
+                        <span></span>
                     </div>
                                     </div>
                                     <div class="slide slide3">
                                         <div class="slideContent">
-                                            <span>Image Three</span>
+                                            <span></span>
                                         </div>
                                                         </div>
                </div>
-               <div id="arrowRight" class="arrow"></div>
+               <div id="arrowRight" class="arrow">
+                   <img src="/arrow right light.png" alt="right arrow">
+               </div>
                
            </div>
         </div>
-<div id="about"></div>
+<div id="about">
+    <div class="aboutContent">
+        <h1>Kim jesteśmy?</h1>
+        <div class="text">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorum itaque, voluptas illo laudantium modi dolores illum commodi non ullam amet mollitia officiis ea quod labore nihil molestias vero eos. Laudantium.
+        Mollitia non ratione blanditiis velit corporis ipsum iusto minima eius repellat cum magni quo, corrupti ullam delectus ipsam, eligendi quis impedit hic. Nesciunt quod sed sit cum assumenda quae maiores?
+        Quod aut reiciendis unde minus ad quasi harum. Asperiores veritatis quaerat rerum veniam deleniti consequatur a dolorem et praesentium voluptatem iste nemo maiores, modi nobis, ad laboriosam vitae? Neque, hic!
+        Exercitationem maiores omnis magni adipisci optio numquam mollitia dolores, rerum consectetur unde minima suscipit nobis temporibus ratione dolore doloremque quisquam odit delectus molestias porro sit vero iusto aliquam? Sit, commodi!</p>
+   <img src="/trainer.jpg" alt="trener" class="aboutImg">
+    </div>
+    
+    </div>
+    <div class="wavesAnimation">
+        <div id="wave1"></div>
+        <div id="wave2"></div>
+        <div id="wave3"></div>
+    </div>
+</div>
 
-<div id="offer"></div>
+<div id="offer">
+    <h1>Co oferujemy?</h1>
+    <div class="offerBox">
+       <div class="box" data-aos="fade-left" data-aos-offset="400" data-aos-duration="1000">
+           <img src="offer photo.jpg" alt="Zdjęcie oferty">
+           <div class="text">
+            <h2>Nazwa zajęć/usługi</h2>
+            <p>Opis: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum est maiores veritatis deleniti aspernatur nihil libero sequi? Nulla rem sunt consequuntur fugiat possimus aspernatur numquam perferendis, esse quibusdam suscipit similique.
+            Explicabo quidem magnam impedit similique dicta accusantium est commodi. Esse, nostrum, ratione beatae illum in cumque provident ducimus vitae eveniet itaque soluta deleniti hic. Provident quasi beatae unde impedit ex?</p>
+            <span>Cena:</span>
+           </div>
+           
+       </div>
+       <div class="box" data-aos="fade-right" data-aos-offset="400" data-aos-duration="1000">
+           <img src="offer photo.jpg" alt="Zdjęcie oferty">
+        <div class="text">
+         <h2>Nazwa zajęć/usługi</h2>
+         <p>Opis: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum est maiores veritatis deleniti aspernatur nihil libero sequi? Nulla rem sunt consequuntur fugiat possimus aspernatur numquam perferendis, esse quibusdam suscipit similique.
+         Explicabo quidem magnam impedit similique dicta accusantium est commodi. Esse, nostrum, ratione beatae illum in cumque provident ducimus vitae eveniet itaque soluta deleniti hic. Provident quasi beatae unde impedit ex?</p>
+         <span>Cena:</span>
+        </div>
+    </div>
+       <div class="box" data-aos="fade-left" data-aos-offset="400" data-aos-duration="1000">
+        <img src="offer photo.jpg" alt="Zdjęcie oferty">
+        <div class="text">
+         <h2>Nazwa zajęć/usługi</h2>
+         <p>Opis: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum est maiores veritatis deleniti aspernatur nihil libero sequi? Nulla rem sunt consequuntur fugiat possimus aspernatur numquam perferendis, esse quibusdam suscipit similique.
+         Explicabo quidem magnam impedit similique dicta accusantium est commodi. Esse, nostrum, ratione beatae illum in cumque provident ducimus vitae eveniet itaque soluta deleniti hic. Provident quasi beatae unde impedit ex?</p>
+         <span>Cena:</span>
+        </div>
+       </div>
+       <div class="box" data-aos="fade-right" data-aos-offset="400" data-aos-duration="1000">
+        <img src="offer photo.jpg" alt="Zdjęcie oferty">
+        <div class="text">
+         <h2>Nazwa zajęć/usługi</h2>
+         <p>Opis: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum est maiores veritatis deleniti aspernatur nihil libero sequi? Nulla rem sunt consequuntur fugiat possimus aspernatur numquam perferendis, esse quibusdam suscipit similique.
+         Explicabo quidem magnam impedit similique dicta accusantium est commodi. Esse, nostrum, ratione beatae illum in cumque provident ducimus vitae eveniet itaque soluta deleniti hic. Provident quasi beatae unde impedit ex?</p>
+         <span>Cena:</span>
+        </div>
+       </div>
+       <div class="box" data-aos="fade-left" data-aos-offset="400" data-aos-duration="1000">
+        <img src="offer photo.jpg" alt="Zdjęcie oferty">
+        <div class="text">
+         <h2>Nazwa zajęć/usługi</h2>
+         <p>Opis: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum est maiores veritatis deleniti aspernatur nihil libero sequi? Nulla rem sunt consequuntur fugiat possimus aspernatur numquam perferendis, esse quibusdam suscipit similique.
+         Explicabo quidem magnam impedit similique dicta accusantium est commodi. Esse, nostrum, ratione beatae illum in cumque provident ducimus vitae eveniet itaque soluta deleniti hic. Provident quasi beatae unde impedit ex?</p>
+         <span>Cena:</span>
+        </div>
+       </div>
+       <div class="box" data-aos="fade-right" data-aos-offset="400" data-aos-duration="1000">
+        <img src="offer photo.jpg" alt="Zdjęcie oferty">
+        <div class="text">
+         <h2>Nazwa zajęć/usługi</h2>
+         <p>Opis: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum est maiores veritatis deleniti aspernatur nihil libero sequi? Nulla rem sunt consequuntur fugiat possimus aspernatur numquam perferendis, esse quibusdam suscipit similique.
+         Explicabo quidem magnam impedit similique dicta accusantium est commodi. Esse, nostrum, ratione beatae illum in cumque provident ducimus vitae eveniet itaque soluta deleniti hic. Provident quasi beatae unde impedit ex?</p>
+         <span>Cena:</span>
+        </div>
+       </div>
+       <div class="box" data-aos="fade-left" data-aos-offset="400" data-aos-duration="1000">
+        <img src="offer photo.jpg" alt="Zdjęcie oferty">
+        <div class="text">
+         <h2>Nazwa zajęć/usługi</h2>
+         <p>Opis: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum est maiores veritatis deleniti aspernatur nihil libero sequi? Nulla rem sunt consequuntur fugiat possimus aspernatur numquam perferendis, esse quibusdam suscipit similique.
+         Explicabo quidem magnam impedit similique dicta accusantium est commodi. Esse, nostrum, ratione beatae illum in cumque provident ducimus vitae eveniet itaque soluta deleniti hic. Provident quasi beatae unde impedit ex?</p>
+         <span>Cena:</span>
+        </div>
+       </div>
+       <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-duration="1000">
+        <img src="offer photo.jpg" alt="Zdjęcie oferty">
+        <div class="text">
+         <h2>Nazwa zajęć/usługi</h2>
+         <p>Opis: Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum est maiores veritatis deleniti aspernatur nihil libero sequi? Nulla rem sunt consequuntur fugiat possimus aspernatur numquam perferendis, esse quibusdam suscipit similique.
+         Explicabo quidem magnam impedit similique dicta accusantium est commodi. Esse, nostrum, ratione beatae illum in cumque provident ducimus vitae eveniet itaque soluta deleniti hic. Provident quasi beatae unde impedit ex?</p>
+         <span>Cena:</span>
+        </div>
+       </div>
+    </div>
+</div>
 
-<div id="gallery"></div>
+<div id="gallery">
+    <h1>Galeria</h1>
+    <div class="galleryBox">
+        <img src="/galler photo1.jpg" alt="" class="galleryPhoto">
+        <img src="/gallery photo 2.jpg" alt="" class="galleryPhoto">
+        <img src="/gallery photo 3.jpg" alt="" class="galleryPhoto">
+        <img src="/galler photo1.jpg" alt="" class="galleryPhoto">
+        <img src="/gallery photo 2.jpg" alt="" class="galleryPhoto">
+        <img src="/gallery photo 3.jpg" alt="" class="galleryPhoto">
+        <img src="/galler photo1.jpg" alt="" class="galleryPhoto">
+        <img src="/gallery photo 2.jpg" alt="" class="galleryPhoto">
+        <img src="/gallery photo 3.jpg" alt="" class="galleryPhoto">
+        <img src="/galler photo1.jpg" alt="" class="galleryPhoto">
+        <img src="/gallery photo 2.jpg" alt="" class="galleryPhoto">
+        <img src="/gallery photo 3.jpg" alt="" class="galleryPhoto">
+    </div>
+</div>
 
 <div id="contact"></div>
 
@@ -57,7 +175,13 @@
         <div class="dot"></div>
     </div>
     <script src="script.js">
-    
+        AOS.init();
+    AOS.init({
+    disable: ()=>{
+      const maxWidth = 768;
+      return window.innerWidth<maxWidth;
+    }
+  });
     </script>
 </body>
 </html>

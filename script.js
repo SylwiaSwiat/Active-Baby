@@ -3,10 +3,13 @@
      preloader.classList.add('loaded')
  })
 
+ AOS.init();
+
  let slideImages = document.querySelectorAll('.slide');
  let arrowRight = document.querySelector('#arrowRight');
  let arrowLeft = document.querySelector('#arrowLeft');
  let current = 0;
+ let galleryPhotos = document.querySelectorAll('.galleryPhoto');
 
  const reset = ()=>{
 for(let i=0; i<slideImages.length; i++){
@@ -23,6 +26,7 @@ for(let i=0; i<slideImages.length; i++){
      reset();
      slideImages[current -1].style.display = 'block';
      current--;
+
  }
 
  arrowLeft.addEventListener('click', ()=>{
@@ -36,6 +40,7 @@ const showNext = ()=>{
     reset();
     slideImages[current + 1].style.display = 'block';
     current++;
+    
 }
 
 arrowRight.addEventListener('click', ()=>{
@@ -46,3 +51,13 @@ showNext();
 })
 
  startSlide();
+
+galleryPhotos.forEach((galleryPhoto)=>{
+    galleryPhoto.addEventListener('click', ()=>{
+        galleryPhoto.classList.toggle('fullScreen')
+    })
+})
+     
+ 
+ 
+ 
