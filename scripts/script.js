@@ -58,5 +58,11 @@ galleryPhotos.forEach((galleryPhoto) => {
     })
 })
 
-
+AOS.init();
+AOS.init({
+    disable: () => {
+        const maxWidth = 768;
+        return window.innerWidth < maxWidth;
+    }
+});
 
