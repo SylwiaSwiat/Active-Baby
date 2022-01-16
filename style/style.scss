@@ -16,7 +16,6 @@
 ::-webkit-scrollbar-track {
     background: #DEF5FD;
     border-radius: 2px;
-
 }
 
 ::-webkit-scrollbar-thumb {
@@ -30,7 +29,6 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-
 }
 
 .container {
@@ -51,7 +49,6 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
-
     }
 
     li {
@@ -62,20 +59,15 @@ body {
             cursor: pointer;
             color: white;
         }
-
-
     }
 
     a {
         text-decoration: none;
         color: #DEF5FD;
-
-
     }
 }
 
 .loader-wrapper {
-
     position: fixed;
     height: 100vh;
     width: 100vw;
@@ -93,7 +85,6 @@ body {
         height: 30px;
         width: 30px;
         animation: pool 1.5s ease infinite alternate;
-
     }
 }
 
@@ -123,8 +114,6 @@ body {
     // background-size: cover;
     height: 100vh;
     width: 100vw;
-
-
 }
 
 nav {
@@ -156,7 +145,6 @@ nav {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 
@@ -240,7 +228,6 @@ nav {
         transition: transform .5s ease;
         border-radius: 35% 5% 35% 5%;
         margin-top: 1rem;
-
     }
 
     .aboutImg:hover {
@@ -258,7 +245,6 @@ nav {
         height: 20px;
         width: 100%;
         margin-bottom: 3rem;
-
     }
 
     #wave1 {
@@ -332,7 +318,6 @@ nav {
         flex-direction: column;
         justify-content: center;
         align-items: center;
-
     }
 
     .box {
@@ -342,8 +327,7 @@ nav {
         max-width: 1000px;
         border-radius: 9px;
         background: rgba(255, 255, 252, 1);
-        box-shadow: .5px .5px 8px #C9C9C9,
-            -.5px .5px 8px #C9C9C9;
+        box-shadow: .5px .5px 8px #C9C9C9, -.5px .5px 8px #C9C9C9;
         margin: 2rem 0;
 
         .text {
@@ -369,8 +353,7 @@ nav {
     }
 
     .box:hover {
-        box-shadow: 2px 2px 12px #C9C9C9,
-            -2px -2px 12px #C9C9C9;
+        box-shadow: 2px 2px 12px #C9C9C9, -2px -2px 12px #C9C9C9;
     }
 }
 
@@ -405,7 +388,6 @@ nav {
         .galleryPhoto:hover {
             transform: scale(1.05);
             cursor: pointer;
-
         }
     }
 }
