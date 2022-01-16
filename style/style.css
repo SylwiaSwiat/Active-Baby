@@ -322,7 +322,7 @@ nav {
 
     #about #wave1 {
         position: absolute;
-        background-image: url("../style/wave!.svg");
+        background-image: url("./wave!.svg");
         width: 200%;
         height: 30%;
         -webkit-animation: wave 10s -3s linear infinite;
@@ -334,7 +334,7 @@ nav {
 
     #about #wave2 {
         position: absolute;
-        background-image: url("./style/wave!.svg");
+        background-image: url("./wave!.svg");
         width: 200%;
         height: 30%;
         animation: wave 18s linear reverse infinite;
@@ -343,7 +343,7 @@ nav {
 
     #about #wave3 {
         position: absolute;
-        background-image: url("./style/wave!.svg");
+        background-image: url("./wave!.svg");
         width: 200%;
         height: 30%;
         -webkit-animation: wave 20s -1s linear infinite;
