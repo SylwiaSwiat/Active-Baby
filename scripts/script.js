@@ -3,13 +3,16 @@ window.addEventListener('load', () => {
     preloader.classList.add('loaded')
 })
 
-AOS.init();
 
 let slideImages = document.querySelectorAll('.slide');
 let arrowRight = document.querySelector('#arrowRight');
 let arrowLeft = document.querySelector('#arrowLeft');
 let current = 0;
 let galleryPhotos = document.querySelectorAll('.galleryPhoto');
+let menu = document.querySelectorAll('.menuEl');
+let menuBtn = document.querySelector('.menuBtn');
+let menuCloseBtn = document.querySelector('.menuCloseBtn');
+let nav = document.querySelector('nav');
 
 const reset = () => {
     for (let i = 0; i < slideImages.length; i++) {
@@ -50,19 +53,29 @@ arrowRight.addEventListener('click', () => {
     showNext();
 })
 
-startSlide();
-
 galleryPhotos.forEach((galleryPhoto) => {
     galleryPhoto.addEventListener('click', () => {
         galleryPhoto.classList.toggle('fullScreen')
     })
 })
 
-AOS.init();
-AOS.init({
-    disable: () => {
-        const maxWidth = 768;
-        return window.innerWidth < maxWidth;
+setInterval(()=>{
+    if (current === slideImages.length - 1) {
+        current = -1
     }
-});
+    showNext()
+}, 5000);
+
+const activate = ()=> nav.classList.add('activeMenu')
+menuBtn.addEventListener('click', activate)
+
+const deactivate = ()=> nav.classList.remove('activeMenu')
+
+menuCloseBtn.addEventListener('click', deactivate)
+
+menu.forEach((menuEl)=> menuEl.addEventListener('click', deactivate))
+
+startSlide();
+
+
 
