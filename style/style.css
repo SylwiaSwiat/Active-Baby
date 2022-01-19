@@ -606,6 +606,7 @@ h1 {
   background-color: #021820;
   z-index: 9999;
   max-width: 100vw;
+  padding: 5% !important;
 }
 
 #contact {
@@ -758,6 +759,18 @@ footer .footerBox .copy {
 }
 
 @media all and (max-width: 768px) {
+  .fullScreen {
+    padding: 0 !important;
+  }
+  #slide1 {
+    background-image: url("../photos/slide1phone.jpg");
+  }
+  .slide2 {
+    background-image: url("../photos/slide2phone.jpg");
+  }
+  .slide3 {
+    background-image: url("../photos/slide3phone.jpg");
+  }
   ::marker {
     color: transparent;
   }
