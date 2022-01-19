@@ -481,15 +481,18 @@ h1 {
         height: 100%;
         align-content: center;
         justify-content: center;
+        text-align: center;
 
-        p {
+        p,
+        h4 {
             font-size: 1.5rem;
             color: $navy;
-            padding: 1.5rem .5rem;
+            padding: .9rem .5rem;
 
             i {
                 color: $violet;
                 margin: .5rem;
+                font-size: 2rem;
             }
 
             a {
@@ -535,14 +538,20 @@ footer {
         justify-content: center;
         padding: .5rem 2rem;
         color: $navy;
+        text-align: center;
 
         .telAndMail {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
+            text-align: center;
 
-            p:first-of-type {
+            p {
                 margin-right: 3rem;
+            }
+
+            p:last-of-type {
+                margin-right: 0;
             }
         }
 
@@ -696,5 +705,13 @@ footer {
 
     #contact .contactBox p {
         font-size: 1rem;
+    }
+
+    footer .footerBox .telAndMail {
+        justify-content: center;
+
+        p {
+            margin-right: 1rem;
+        }
     }
 }

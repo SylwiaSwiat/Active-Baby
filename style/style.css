@@ -640,20 +640,25 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  text-align: center;
 }
 
-#contact .contactBox p {
+#contact .contactBox p,
+#contact .contactBox h4 {
   font-size: 1.5rem;
   color: #045493;
-  padding: 1.5rem .5rem;
+  padding: .9rem .5rem;
 }
 
-#contact .contactBox p i {
+#contact .contactBox p i,
+#contact .contactBox h4 i {
   color: #a694c4;
   margin: .5rem;
+  font-size: 2rem;
 }
 
-#contact .contactBox p a {
+#contact .contactBox p a,
+#contact .contactBox h4 a {
   color: #045493;
 }
 
@@ -708,6 +713,7 @@ footer .footerBox {
           justify-content: center;
   padding: .5rem 2rem;
   color: #045493;
+  text-align: center;
 }
 
 footer .footerBox .telAndMail {
@@ -720,10 +726,15 @@ footer .footerBox .telAndMail {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  text-align: center;
 }
 
-footer .footerBox .telAndMail p:first-of-type {
+footer .footerBox .telAndMail p {
   margin-right: 3rem;
+}
+
+footer .footerBox .telAndMail p:last-of-type {
+  margin-right: 0;
 }
 
 footer .footerBox a {
@@ -877,6 +888,14 @@ footer .footerBox .copy {
   }
   #contact .contactBox p {
     font-size: 1rem;
+  }
+  footer .footerBox .telAndMail {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer .footerBox .telAndMail p {
+    margin-right: 1rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
