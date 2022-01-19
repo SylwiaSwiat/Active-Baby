@@ -191,15 +191,15 @@ nav {
 }
 
 #slide1 {
-  background-image: url("../photos/first main photo.jpg");
+  background-image: url("../photos/slide1.jpg");
 }
 
 .slide2 {
-  background-image: url("../photos/second main photo.jpg");
+  background-image: url("../photos/slide2.jpg");
 }
 
 .slide3 {
-  background-image: url("../photos/third main photo.jpg");
+  background-image: url("../photos/slide3.jpg");
 }
 
 .slide {
