@@ -322,7 +322,7 @@ nav {
 h1 {
     font-size: 3.5rem;
     font-family: 'Roboto', sans-serif;
-    margin: 7rem 0 3rem 12rem;
+    margin: 2rem 0 5rem 12rem;
     color: $navy;
 }
 
@@ -332,6 +332,20 @@ h1 {
     display: flex;
     justify-content: center;
     flex-direction: column;
+
+    ul {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: center;
+        color: $navy;
+        margin-top: 3rem;
+
+        li {
+            padding: 1rem;
+        }
+    }
 
     h1 {
         margin-bottom: 1rem;
@@ -579,6 +593,7 @@ footer {
         }
     }
 }
+
 
 @media all and (max-width: 768px) {
     .fullScreen {

@@ -402,7 +402,7 @@ nav {
 h1 {
   font-size: 3.5rem;
   font-family: 'Roboto', sans-serif;
-  margin: 7rem 0 3rem 12rem;
+  margin: 2rem 0 5rem 12rem;
   color: #045493;
 }
 
@@ -419,6 +419,29 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#offer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #045493;
+  margin-top: 3rem;
+}
+
+#offer ul li {
+  padding: 1rem;
 }
 
 #offer h1 {
