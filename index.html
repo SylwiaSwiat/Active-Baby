@@ -27,7 +27,7 @@
                     <li><a href="#offer" class="menuEl">Oferta</a> </li>
                     <li><a href="#gallery" class="menuEl">Galeria</a> </li>
                     <li><a href="#register" class="menuEl" id="registerBtn">Zapisy</a> </li>
-                    <li><a href="/regulamin.html" class="menuEl" target="_blank">Regulamin</a> </li>
+                    <li><a href="./regulamin.html" class="menuEl" target="_blank">Regulamin</a> </li>
                     <li><a href="#contact" class="menuEl">Kontakt</a></li>
                 </ul>
             </nav>
@@ -111,7 +111,6 @@
     <li>Zamykanie w bańce mydlanej</li>
     <li>Wielkie bańki mydlane XXL</li>
     <li>Balonowe zoo</li>
-<<<<<<< HEAD
     <li>Zabawy ruchowe i konkurencje sportowe</li>
     <li>Zabawy z chustą Klanza</li>
     <li>Tańce</li>
@@ -128,6 +127,7 @@
 </div>
 <ul class="offerList">
 <li>Kurs wakacyjny - GOSIR Osielsko</li>
+<p>Cena za sierpień: 200zł za 5 zajęć</p>
 <li>Aqua Fordon</li>
 </ul>
 <p class="transfer">Dane do przelewu:
@@ -147,12 +147,6 @@
 <li>Okularki do pływania</li>
 <li>Ręcznik kąpielowy</li>
 <li>Żel pod prysznic</li>
-=======
-    <li>Zabawy ruchome i konkurencje sportowe</li>
-    <li>Zabawy z chustą Klanza</li>
-    <li>Tańce</li>
-    <li>Malowanie buzi</li>
->>>>>>> 27082777a6b428e197ce0a19258c2283284ea6ad
 </ul>
         </div>
 
@@ -219,20 +213,20 @@
         </div>
             <p>Dane dziecka:</p>
             <div class="selection">
-            <input type="text" name="name" value="Imię" onfocus="this.value='' ">
-            <input type="text" name="lastName" value="Nazwisko" onfocus="this.value='' ">
-            <input type="date" name="birth" value="Data urodzenia" onfocus="this.value='' ">
-            <input type="text" value="Adres zamieszkania" onfocus="this.value='' ">
+            <input id="childName" class="formInput" type="text" name="name" value="Imię" onfocus="this.value='' " onChange="getInfo()">
+            <input id='childLastname' class="formInput" type="text" name="lastName" value="Nazwisko" onfocus="this.value='' " onChange="getInfo()">
+            <input id="childBirth" class="formInput" type="date" name="birth" value="Data urodzenia" onfocus="this.value='' " onChange="getInfo()">
+            <input id="childAdress" class="formInput" type="text" value="Adres zamieszkania" onfocus="this.value='' " onChange="getInfo()">
         </div>
             <p>Dane rodzica:</p>
             <div class="selection">
-            <input type="text" name="name" value="Imię" onfocus="this.value='' ">
-            <input type="text" name="lastName" value="Nazwisko" onfocus="this.value='' ">
-            <input type="email" name="" id="" value="email" onfocus="this.value='' ">
-            <input type="tel" name="" id="" value="Numer telefonu" onfocus="this.value='' ">
+            <input id="parentName" class="formInput" type="text" name="name" value="Imię" onfocus="this.value='' " onChange="getInfo()">
+            <input id="parentLastName" class="formInput" type="text" name="lastName" value="Nazwisko" onfocus="this.value='' " onChange="getInfo()">
+            <input id="parentEmail" class="formInput" type="email" name="" id="" value="email" onfocus="this.value='' " onChange="getInfo()">
+            <input id="parentPhone" class="formInput" type="tel" name="" id="" value="Numer telefonu" onfocus="this.value='' " onChange="getInfo()">
         </div>
         <div class="formBtn">
-            <button >Wyślij</button>
+            <button id="submitBtn" >Wyślij</button>
             <button id="closeFormBtn">Zamknij formularz</button>
         </div>
         </form>

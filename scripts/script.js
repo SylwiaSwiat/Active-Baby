@@ -18,6 +18,7 @@ let register = document.querySelector('#register')
 let container = document.querySelector('.container')
 let closeFormBtn = document.querySelector('#closeFormBtn')
 let registerBtn2 = document.querySelector('.registerBtn2')
+let submitBtn = document.querySelector('#submitBtn')
 let select = document.querySelector('#select')
 let saturday = document.querySelector("#saturday")
 let thuesday = document.querySelector('#thuesday')
@@ -110,3 +111,23 @@ if(option==='Sobota') {thuesday.style.display='none'
 }
 }
 update();
+const formInfo=()=>{
+    let valChildName = document.querySelector('#childName').value
+    let valChildLastName = document.querySelector('#childLastName').value
+    let valChildBirth = document.querySelector('#childBirth').value
+    let valChildAdress = document.querySelector('#childAdress').value
+    let valParentName = document.querySelector('#parentName').value
+    let valParentLastName = document.querySelector('#parentLastName').value
+    let valParentEmail = document.querySelector('#parentEmail').value
+    let valParentPhone = document.querySelector('#parentPhone').value
+    console.log(valChildName)
+    console.log(valChildLastName)
+    console.log(valChildBirth)
+    console.log(valChildAdress)
+    console.log(valParentName)
+    console.log(valParentLastName)
+    console.log(valParentEmail)
+    console.log(valParentPhone)
+}
+submitBtn.addEventListener('click', formInfo)
+

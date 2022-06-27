@@ -886,4 +886,85 @@ footer {
             margin-right: 1rem;
         }
     }
+    #register{
+        min-width: 100vw;
+        min-height: 100vh;
+        z-index: 99999;
+        background-image: url(/photos/pool1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        align-items: center;
+            justify-content: center;
+        form{
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            margin: .5rem;
+            background: linear-gradient(0deg, $navy 0%, $lighterPink 100%);
+            opacity: .9;
+            padding:  .5rem;
+            border: 1px solid rgba(255, 255, 255, .3);
+            box-shadow: 0 4px 30px rgba(0, 0, 0, .1);
+            backdrop-filter: blur(5px);
+            align-content: center;
+            border-radius: 5px;
+            max-width: 100%;
+            input, select{
+                padding: .75rem;
+                margin: .5rem;
+                background: rgb(244, 242, 242);
+                outline: none;
+                border: 1px solid rgba(255, 255, 255, .3);
+                font-size: .75rem;
+                border-radius: 5px;
+                width: 100%;
+            }
+            .selection{
+                display: flex;
+            flex-direction: column;
+            margin: .5rem;
+            }
+            h1{
+                font-size: 1.25rem;
+                font-weight: bold;
+            }
+            p{
+                color: white;
+                font-size: .75rem;
+            }
+            .formBtn{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            button{
+                padding: .75rem;
+                margin: 1rem 8rem;
+                background: rgb(244, 242, 242);
+                outline: none;
+                border-radius: 5px;
+                border: 1px solid rgba(255, 255, 255, .3); 
+                cursor: pointer;
+                width: 100%;
+            }
+            button:hover{
+                    background-color: $lightNavy;
+                    transition: ease-in-out .3s;
+                    color: white;
+                
+            }
+            
+        }
+    }
+    
+      .hideRegisterBtn{
+          display: none;
+      }
+    .showRegister{
+       display: block;
+       position: absolute;
+        
+    }
 }
