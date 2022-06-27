@@ -1127,7 +1127,7 @@ footer .footerBox .copy {
     min-width: 100vw;
     min-height: 100vh;
     z-index: 99999;
-    background-image: url(/photos/pool1.jpg);
+    background-image: url("/photos/pool1.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
