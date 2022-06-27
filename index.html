@@ -26,6 +26,8 @@
                     <!-- <li><a href="#about" class='menuEl'>O firmie</a> </li> -->
                     <li><a href="#offer" class="menuEl">Oferta</a> </li>
                     <li><a href="#gallery" class="menuEl">Galeria</a> </li>
+                    <li><a href="#register" class="menuEl" id="registerBtn">Zapisy</a> </li>
+                    <li><a href="/regulamin.html" class="menuEl" target="_blank">Regulamin</a> </li>
                     <li><a href="#contact" class="menuEl">Kontakt</a></li>
                 </ul>
             </nav>
@@ -41,17 +43,34 @@
                 <div id="slider">
                     <div class="slide" id="slide1">
                         <div class="slideContent">
-                            <span></span>
+                            <button>
+                            <span>Rejestracja na urodzinki:</span>
+                            <span>796 829 742</span>
+                        </button>
                         </div>
                     </div>
                     <div class="slide slide2">
                         <div class="slideContent">
-                            <span></span>
+                            <button>
+                            <span>Rejestracja na urodzinki:</span>
+                            <span>796 829 742</span>
+                        </button>
                         </div>
                     </div>
                     <div class="slide slide3">
                         <div class="slideContent">
-                            <span></span>
+                            <button>
+                            <span>Rejestracja na urodzinki:</span>
+                            <span>796 829 742</span>
+                        </button>
+                        </div>
+                    </div>
+                    <div class="slide" id="slide4">
+                        <div class="slideContent">
+                            <button class="registerBtn2">
+                                <span>Zapisy:</span>
+                            <span>Nauka pływania</span>
+                        </button>
                         </div>
                     </div>
                 </div>
@@ -85,13 +104,48 @@
         <div id="offer">
             <h1>Co oferujemy?</h1>
             <div class="offerBtn">
-                <button class="btn" id="animations">Animacje</button>
+                <button class="btn" id="animations">Urodzinki tradycyjne</button>
+                <p>2h - 350zł</p>
             </div>
 <ul class="offerList">
+    <li>Zamykanie w bańce mydlanej</li>
+    <li>Wielkie bańki mydlane XXL</li>
+    <li>Balonowe zoo</li>
+    <li>Zabawy ruchowe i konkurencje sportowe</li>
+    <li>Zabawy z chustą Klanza</li>
     <li>Tańce</li>
-    <li>Tory przeszkód</li>
     <li>Malowanie buzi</li>
-    <li>Zabawa z chustą</li>
+</ul>
+<p class="transfer">Dane do przelewu:
+    <span>Nazwa Odbiorcy: ACTIVE BABY Patryk Martas</span>
+    <span>Adres Odbiorcy: ul. Altanowa 1/6, 85-790 Bydgoszcz</span>
+    <span>Numer Konta: 73 1090 1896 0000 0001 4940 4057</span>
+    <span>Tytuł przelewu animacje:</span>
+</p>
+<div class="offerBtn">
+    <button class="btn" id="swimming">Nauka pływania</button>
+</div>
+<ul class="offerList">
+<li>Kurs wakacyjny - GOSIR Osielsko</li>
+<li>Aqua Fordon</li>
+</ul>
+<p class="transfer">Dane do przelewu:
+    <span>Nazwa Odbiorcy: ACTIVE BABY Patryk Martas</span>
+    <span>Adres Odbiorcy: ul. Altanowa 1/6, 85-790 Bydgoszcz</span>
+    <span>Numer Konta: 73 1090 1896 0000 0001 4940 4057</span>
+    <span>Tytuł przelewu nauka pływania: Opłata lekcji pływania za miesiąc:...(dany w którym odbywają się zajęcia), imię i nazwisko uczestnika zajęć, pływalnia.</span>
+</p>
+<div class="offerBtn">
+    <strong>Informacje organizacyjne</strong>
+    <p>Na basen zabieramy:</p>
+</div>
+<ul class="offerList">
+<li>Kąpielówki lub strój kąpielowy (młodsze dzieci można ubrać w pianki)</li>
+<li>Klapki basenowe</li>
+<li>Czepek (materiałowy lub silikonowy)</li>
+<li>Okularki do pływania</li>
+<li>Ręcznik kąpielowy</li>
+<li>Żel pod prysznic</li>
 </ul>
         </div>
 
@@ -127,6 +181,54 @@
                             <p class="copy">Copyright &copy; 2022</p>
             </div>
         </footer>
+    </div>
+    <div id="register" class="hideRegisterBtn">
+        
+        
+        <form>
+            <h1>Zapisy na zajęcia nauki pływania</h1>
+            <p>Wybór zajęć:</p>
+            <div class="selection">
+            <select name="" id="select" onChange="update()">
+                <optgroup label="GOSIR Osielsko" >
+                    <option value="1">Wtorek</option>
+                </optgroup>
+                <optgroup label="Aqua Fordon" >
+                    <option value="1">Sobota</option>
+                </optgroup>
+            </select>
+            <select name="" id="thuesday">
+                <option value="1">Wybierz godzinę</option>
+                <option value="2">17:00-17:45</option>
+                <option value="3">17:45-18:30</option>
+                <option value="4">18:30-19:15</option>
+                <option value="5">19:15-20:00</option>
+            </select>
+            <select name="" id="saturday">
+                <option value="1">Wybierz godzinę</option>
+                <option value="2">12:00-12:45</option>
+                <option value="3">13:00-13:45</option>
+            </select>
+        </div>
+            <p>Dane dziecka:</p>
+            <div class="selection">
+            <input type="text" name="name" value="Imię" onfocus="this.value='' ">
+            <input type="text" name="lastName" value="Nazwisko" onfocus="this.value='' ">
+            <input type="date" name="birth" value="Data urodzenia" onfocus="this.value='' ">
+            <input type="text" value="Adres zamieszkania" onfocus="this.value='' ">
+        </div>
+            <p>Dane rodzica:</p>
+            <div class="selection">
+            <input type="text" name="name" value="Imię" onfocus="this.value='' ">
+            <input type="text" name="lastName" value="Nazwisko" onfocus="this.value='' ">
+            <input type="email" name="" id="" value="email" onfocus="this.value='' ">
+            <input type="tel" name="" id="" value="Numer telefonu" onfocus="this.value='' ">
+        </div>
+        <div class="formBtn">
+            <button >Wyślij</button>
+            <button id="closeFormBtn">Zamknij formularz</button>
+        </div>
+        </form>
     </div>
     
     <div class="loader-wrapper">

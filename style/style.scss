@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Biryani:wght@200&family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Biryani:wght@200&family=Roboto:wght@100&display=swap');
 $pink:#d6a0c4;
 $lighterPink: #d8a0c8;
 $lighterViolet: #ba9cc4;
@@ -144,7 +144,7 @@ nav {
     justify-content: center;
     align-items: center;
     z-index: 100;
-    font-family: 'Architects Daughter', cursive;
+    font-family: 'Aleo', serif;
     text-transform: uppercase;
 }
 
@@ -158,6 +158,9 @@ nav {
 
 .slide3 {
     background-image: url('../photos/slide3.jpg');
+}
+#slide4{
+    background-image: url('../photos/first main photo.jpg');
 }
 
 .slide {
@@ -180,8 +183,10 @@ nav {
     width: 100%;
     height: 100vh;
     overflow-x: hidden;
-    color: #DEF5FD;
+    color: $navy;
     font-size: 30px;
+    
+
 }
 
 .slideContent {
@@ -190,6 +195,22 @@ nav {
     justify-content: center;
     align-items: center;
     text-align: center;
+    button{
+        background-color: $lighterPink;
+        color: $navy;
+    font-size: 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem;
+    opacity: .9;
+    cursor: pointer;
+    }
 }
 
 .arrow {
@@ -235,6 +256,7 @@ nav {
         margin-bottom: 3rem;
         font-family: 'Roboto', sans-serif;
         margin-left: 12rem;
+        text-align: center;
     }
 
     p {
@@ -322,16 +344,17 @@ nav {
 h1 {
     font-size: 3.5rem;
     font-family: 'Roboto', sans-serif;
-    margin: 2rem 0 5rem 12rem;
+    margin: 1.5rem;
     color: $navy;
 }
 
 #offer {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
+     width: 100%;
+     min-height: 100vh;
+     display: flex;
     justify-content: center;
-    flex-direction: column;
+     flex-direction: column;
+     
 
     ul {
         display: flex;
@@ -340,23 +363,26 @@ h1 {
         align-content: center;
         align-items: center;
         color: $navy;
-        margin-top: 3rem;
+        margin: 3rem 0;
 
         li {
             padding: 1rem;
+            text-align: center;
         }
     }
 
     h1 {
-        margin-bottom: 1rem;
+        text-align: center;
+        margin-top: 100px;
     }
 
     .offerBtn {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         align-content: center;
+        text-align: center;
 
         .btn {
             border-radius: 15px;
@@ -366,11 +392,23 @@ h1 {
             border: none;
             background-color: $lighterPink;
             color: #FFFFFC;
-            font-size: 1rem;
+            font-size: 3rem;
             box-shadow: $darkerViolet 0px 6px 12px -2px, $lighterViolet 0px 3px 7px -3px;
         }
+        p{
+            color: $navy;
+            font-weight: bold;
+            font-size: 1.25rem;
+            margin: .5rem;
+        }
+        strong{
+            color: $navy;
+            font-weight: bold;
+            font-size: 1.75rem;
+            margin: .5rem;  
+        }
     }
-
+}
     .btn:hover {
         cursor: pointer;
     }
@@ -429,6 +467,17 @@ h1 {
     .box:hover {
         box-shadow: 2px 2px 12px #C9C9C9, -2px -2px 12px #C9C9C9;
     }
+.transfer{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 2rem .5rem;
+    color: $navy;
+    padding: .25rem;
+    font-size: 1rem;
 }
 
 
@@ -443,7 +492,7 @@ h1 {
     h1 {
         font-size: 3.5rem;
         font-family: 'Roboto', sans-serif;
-        margin: 7rem 0 3rem 12rem;
+       text-align: center;
     }
 
     .galleryBox {
@@ -489,6 +538,11 @@ h1 {
     display: flex;
     align-content: center;
     flex-direction: column;
+    justify-content: center;
+
+    h1{
+        text-align: center;
+    }
 
     .contactBox {
         display: flex;
@@ -499,6 +553,8 @@ h1 {
         align-content: center;
         justify-content: center;
         text-align: center;
+
+        
 
         p,
         h4 {
@@ -593,6 +649,88 @@ footer {
         }
     }
 }
+#register{
+    min-width: 100vw;
+    min-height: 100vh;
+    margin: 0;
+    left: 0;
+    top: 0;
+    z-index: 99999;
+    background-image: url(/photos/pool1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    align-items: center;
+        justify-content: center;
+    form{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        margin: 2rem 10rem;
+        background: linear-gradient(0deg, $navy 0%, $lighterPink 100%);
+        opacity: .9;
+        padding:  .5rem 5rem;
+        border: 1px solid rgba(255, 255, 255, .3);
+        box-shadow: 0 4px 30px rgba(0, 0, 0, .1);
+        backdrop-filter: blur(5px);
+        align-content: center;
+        border-radius: 5px;
+        input, select{
+            padding: .75rem;
+            margin: .5rem;
+            background: rgb(244, 242, 242);
+            outline: none;
+            border: 1px solid rgba(255, 255, 255, .3);
+            font-size: 1rem;
+            border-radius: 5px;
+        }
+        .selection{
+            display: grid;
+            grid-template-columns: 400px 400px;
+        }
+        h1{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        p{
+            color: white;
+            font-size: 1.25rem;
+        }
+        .formBtn{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        button{
+            padding: .75rem;
+            margin: 1rem 8rem;
+            background: rgb(244, 242, 242);
+            outline: none;
+            border-radius: 5px;
+            border: 1px solid rgba(255, 255, 255, .3); 
+            cursor: pointer;
+            width: 200px;
+        }
+        button:hover{
+                background-color: $lightNavy;
+                transition: ease-in-out .3s;
+                color: white;
+            
+        }
+        
+    }
+}
+
+  .hideRegisterBtn{
+      display: none;
+  }
+.showRegister{
+   display: block;
+   position: absolute;
+    
+}
+
 
 
 @media all and (max-width: 768px) {
@@ -716,6 +854,10 @@ footer {
         max-width: 100%;
     }
 
+#offer .offerBtn .btn{
+    font-size: 1.5rem;
+}
+
     footer {
         font-size: .7rem;
         flex-direction: column;
@@ -731,10 +873,6 @@ footer {
     #arrowRight {
         right: 130px;
         margin-right: 0;
-    }
-
-    #contact {
-        justify-content: space-around;
     }
 
     #contact .contactBox p {

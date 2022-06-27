@@ -13,6 +13,15 @@ let menu = document.querySelectorAll('.menuEl');
 let menuBtn = document.querySelector('.menuBtn');
 let menuCloseBtn = document.querySelector('.menuCloseBtn');
 let nav = document.querySelector('nav');
+let registerBtn = document.querySelector('#registerBtn')
+let register = document.querySelector('#register')
+let container = document.querySelector('.container')
+let closeFormBtn = document.querySelector('#closeFormBtn')
+let registerBtn2 = document.querySelector('.registerBtn2')
+let select = document.querySelector('#select')
+let saturday = document.querySelector("#saturday")
+let thuesday = document.querySelector('#thuesday')
+
 
 const reset = () => {
     for (let i = 0; i < slideImages.length; i++) {
@@ -76,6 +85,28 @@ menuCloseBtn.addEventListener('click', deactivate)
 menu.forEach((menuEl)=> menuEl.addEventListener('click', deactivate))
 
 startSlide();
+  const showFormular = () => {
+      register.classList.remove('hideRegisterBtn')
+      register.classList.add('showRegister')
+      container.style.display='none'
+  }
+ registerBtn.addEventListener('click', showFormular)
+  const closeFormular = () => {
+      register.classList.add('hideRegisterBtn')
+      register.classList.remove('showRegister')
+      container.style.display='block'
+ }
+  closeFormBtn.addEventListener('click', closeFormular)
+ registerBtn2.addEventListener('click', showFormular)
 
-
-
+const update = ()=>{
+    let option = select.options[select.selectedIndex].text
+    console.log(option)
+    if(option==="Wtorek") {saturday.style.display='none'
+thuesday.style.display='flex'
+    }
+if(option==='Sobota') {thuesday.style.display='none'
+    saturday.style.display='flex'
+}
+}
+update();
