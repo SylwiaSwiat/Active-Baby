@@ -186,7 +186,10 @@ nav {
       -ms-flex-align: center;
           align-items: center;
   z-index: 100;
+<<<<<<< HEAD
   font-family: 'Aleo', serif;
+=======
+>>>>>>> 27082777a6b428e197ce0a19258c2283284ea6ad
   text-transform: uppercase;
 }
 
@@ -468,7 +471,12 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   color: #045493;
+<<<<<<< HEAD
   margin: 3rem 0;
+=======
+  margin-top: 3rem;
+  text-align: center;
+>>>>>>> 27082777a6b428e197ce0a19258c2283284ea6ad
 }
 
 #offer ul li {
