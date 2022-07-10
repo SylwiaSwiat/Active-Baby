@@ -60,6 +60,9 @@ body {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #menu li,
@@ -67,8 +70,8 @@ body {
 #offer li,
 #gallery li,
 #contact li {
-  font-size: 1.8rem;
-  margin: .25rem 2rem;
+  font-size: 1.6rem;
+  margin: 0rem 2rem .5rem 2rem;
 }
 
 #menu li :hover,
@@ -85,11 +88,17 @@ body {
 #offer li img,
 #gallery li img,
 #contact li img {
-  display: block;
-  height: 100%;
-  position: absolute;
   left: 4%;
   top: 0;
+  height: 120px;
+}
+
+#menu li .fas,
+#about li .fas,
+#offer li .fas,
+#gallery li .fas,
+#contact li .fas {
+  display: block;
 }
 
 #menu a,
@@ -172,10 +181,10 @@ body {
 }
 
 nav {
-  background-color: #e4dffcb4;
+  background-color: #eaeaeae3;
   position: fixed;
   width: 100vw;
-  height: 100px;
+  height: 175px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -195,7 +204,7 @@ nav {
 }
 
 .slide2 {
-  background-image: url("../photos/slide2.jpg");
+  background-image: url("../photos/second main photo.jpg");
 }
 
 .slide3 {
@@ -450,16 +459,22 @@ h1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 0;
+  padding-top: 0;
+  text-align: center;
 }
 
 #offer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+      -ms-flex-direction: row;
+          flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-line-pack: center;
@@ -468,12 +483,32 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   color: #045493;
-  margin: 3rem 0;
 }
 
 #offer ul li {
-  padding: 1rem;
+  padding: 0;
   text-align: center;
+  width: 25%;
+  border-radius: 5px;
+  -webkit-box-shadow: 8px 4px 20px 0px rgba(66, 68, 90, 0.48);
+          box-shadow: 8px 4px 20px 0px rgba(66, 68, 90, 0.48);
+  margin: 1rem;
+}
+
+#offer ul li p {
+  background-color: #2c64ab;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1rem 1rem -1rem 1rem;
+  padding: 1rem;
+  border-radius: 5px;
+}
+
+#offer ul li p:hover,
+#offer ul li img:hover {
+  color: white;
+  cursor: auto;
 }
 
 #offer h1 {
@@ -494,9 +529,23 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -ms-flex-line-pack: center;
       align-content: center;
   text-align: center;
+  -webkit-box-shadow: 8px 4px 20px 0px rgba(66, 68, 90, 0.48);
+          box-shadow: 8px 4px 20px 0px rgba(66, 68, 90, 0.48);
+  padding: .1rem;
+  margin: 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 5px;
+  background: #D8A0C9;
+  background: -webkit-gradient(linear, left bottom, left top, from(#5c6cac), to(#D8A0C9));
+  background: linear-gradient(0deg, #5c6cac 0%, #D8A0C9 100%);
 }
 
 #offer .offerBtn .btn {
@@ -517,6 +566,9 @@ h1 {
   font-weight: bold;
   font-size: 1.25rem;
   margin: .5rem;
+  background-color: #fffffc;
+  border-radius: 5px;
+  padding: 3rem;
 }
 
 #offer .offerBtn strong {
@@ -526,13 +578,16 @@ h1 {
   margin: .5rem;
 }
 
-.btn:hover {
+#offer .offerBtn:hover {
   cursor: pointer;
+  -webkit-box-shadow: 8px 4px 14px 0px rgba(66, 68, 90, 0.25);
+          box-shadow: 8px 4px 14px 0px rgba(66, 68, 90, 0.25);
+  -webkit-transition: ease-in-out .3s;
+  transition: ease-in-out .3s;
 }
 
-.btn:active {
-  -webkit-box-shadow: #9b93c3 0px 4px 12px -2px, #ba9cc4 0px 3px 7px -3px;
-          box-shadow: #9b93c3 0px 4px 12px -2px, #ba9cc4 0px 3px 7px -3px;
+.btn:hover {
+  cursor: pointer;
 }
 
 .offerBox {
@@ -632,22 +687,22 @@ h1 {
   min-height: 100vh;
   width: 100%;
   margin: 0;
+  margin-top: -5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  background: #ba9cc4;
 }
 
 #gallery h1 {
   font-size: 3.5rem;
   font-family: 'Roboto', sans-serif;
   text-align: center;
+  color: white;
 }
 
 #gallery .galleryBox {
@@ -702,6 +757,11 @@ h1 {
   padding: 5% !important;
 }
 
+.fullScreen :hover {
+  -webkit-transform: none;
+          transform: none;
+}
+
 #contact {
   width: 100%;
   min-height: 100vh;
@@ -718,6 +778,12 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-image: url("../photos/contact bg2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #contact h1 {
@@ -734,7 +800,7 @@ h1 {
           flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  width: 100%;
+  width: 50%;
   height: 100%;
   -ms-flex-line-pack: center;
       align-content: center;
@@ -742,6 +808,15 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #f5f1f1f1;
+  padding: 1rem;
+  border-radius: 9px;
+  -webkit-box-shadow: 8px 4px 14px 0px rgba(66, 68, 90, 0.25);
+          box-shadow: 8px 4px 14px 0px rgba(66, 68, 90, 0.25);
+  border: 1px solid #ba9cc4;
 }
 
 #contact .contactBox p,
@@ -790,7 +865,7 @@ footer {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: .5rem 2rem;
-  background-color: #e2cde9;
+  background-color: #eaeaeae3;
 }
 
 footer h4 {
@@ -945,7 +1020,7 @@ footer .footerBox .copy {
           align-items: center;
 }
 
-#register form button {
+#register form #submitBtn {
   padding: .75rem;
   margin: 1rem 8rem;
   background: #f4f2f2;
@@ -956,11 +1031,29 @@ footer .footerBox .copy {
   width: 200px;
 }
 
-#register form button:hover {
+#register form #submitBtn:hover {
   background-color: #2c64ab;
   -webkit-transition: ease-in-out .3s;
   transition: ease-in-out .3s;
   color: white;
+}
+
+#register form #closeFormBtn {
+  background-color: transparent;
+  outline: none;
+  border: none;
+  position: absolute;
+  left: 50px;
+  top: 20px;
+}
+
+#register form #closeFormBtn i {
+  font-size: 70px;
+  color: #045493;
+}
+
+#register form #closeFormBtn:hover {
+  cursor: pointer;
 }
 
 .hideRegisterBtn {
@@ -980,7 +1073,7 @@ footer .footerBox .copy {
     background-image: url("../photos/slide1phone.jpg");
   }
   .slide2 {
-    background-image: url("../photos/slide2phone.jpg");
+    background-image: url("../photos/main phone 2.jpg");
   }
   .slide3 {
     background-image: url("../photos/slide3phone.jpg");
@@ -988,10 +1081,8 @@ footer .footerBox .copy {
   ::marker {
     color: transparent;
   }
-  #offer,
-  #gallery,
-  #contact {
-    margin-top: 5rem;
+  .slideContent button {
+    font-size: 20px;
   }
   nav {
     height: 100vh;
@@ -1011,8 +1102,8 @@ footer .footerBox .copy {
     padding: 1rem 0;
     text-align: center;
   }
-  #menu ul li img {
-    height: 20vh;
+  #menu ul .logo {
+    height: 80px;
   }
   .activeMenu {
     -webkit-transform: translateX(100%);
@@ -1028,7 +1119,7 @@ footer .footerBox .copy {
     display: -ms-flexbox;
     display: flex;
     max-width: 100vw;
-    height: 100px;
+    height: 120px;
   }
   .menuToggle .menuBtn {
     right: 10vw;
@@ -1077,12 +1168,14 @@ footer .footerBox .copy {
   h1,
   #gallery h1 {
     margin: 0;
+    margin-top: 0;
     margin-bottom: 2rem;
     text-align: center;
     font-size: 2.5rem;
   }
   img {
     max-width: 250px;
+    max-height: 250px;
   }
   #menu li {
     margin: 0;
@@ -1111,6 +1204,10 @@ footer .footerBox .copy {
   #arrowRight {
     right: 130px;
     margin-right: 0;
+  }
+  #contact .contactBox {
+    width: 80%;
+    padding: .5rem;
   }
   #contact .contactBox p {
     font-size: 1rem;

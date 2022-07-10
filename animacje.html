@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://kit.fontawesome.com/13f87f03f4.js" crossorigin="anonymous"></script>
+    <style>
+
+        #menu{
+            height: auto;
+        }
+       #offer ul{
+        margin: 6rem 2rem 1rem 2rem;
+       }
+       #offer ul li{
+        font-size: 1rem;
+       }
+       .transfer{
+        font-size: 0.7rem;
+       }
+       footer{
+        margin-top: 1rem;
+       }
+       @media all and (max-width: 768px){
+        #offer ul li{
+            width:100%;
+            font-size: .7rem;
+        }
+       }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div id="menu">
+            
+            <nav>
+                <button class="menuCloseBtn"><i class="fas fa-times"></i></button>
+                <ul>
+                    <li><img src="./photos/ab_logo_przezroczyste.svg" alt="logo" class="logo"></li>
+                    <li><a href="./index.html#menu" class="menuEl">Strona Główna</a></li>
+                    <!-- <li><a href="#about" class='menuEl'>O firmie</a> </li> -->
+                    <li><a href="./index.html#offer" class="menuEl">Oferta</a> </li>
+                    <li><a href="./index.html#gallery" class="menuEl">Galeria</a> </li>
+                    <li><a href="#register" class="menuEl" id="registerBtn">Zapisy</a> </li>
+                    <li><a href="./regulamin.html" class="menuEl" target="_blank">Regulamin</a> </li>
+                    <li><a href="./index.html#contact" class="menuEl">Kontakt</a></li>
+                </ul>
+            </nav>
+            
+            <div id="offer" >
+                <ul class="offerList">
+                    <li>Zamykanie w bańce mydlanej</li>
+                    <li>Wielkie bańki mydlane XXL</li>
+                    <li><img src="./photos/balloon zoo.jpg" alt=""><p>Balonowe zoo</p> </li>
+                    <li>Zabawy ruchowe i konkurencje sportowe</li>
+                    <li>Zabawy z chustą Klanza</li>
+                    <li>Tańce</li>
+                    <li>Malowanie buzi</li>
+                </ul>
+                <p class="transfer">Dane do przelewu:
+                    <span>Nazwa Odbiorcy: ACTIVE BABY Patryk Martas</span>
+                    <span>Adres Odbiorcy: ul. Altanowa 1/6, 85-790 Bydgoszcz</span>
+                    <span>Numer Konta: 73 1090 1896 0000 0001 4940 4057</span>
+                    <span>Tytuł przelewu animacje:</span>
+                </p>
+                        </div>
+                       
+        </div>
+        
+        
+       
+        <footer>
+            <img src="./photos/ab_logo_przezroczyste.svg" alt="logo" class="logo">
+            <div class="footerBox">
+                <h4> Active Baby</h4>
+                
+                <div class="telAndMail">
+                    <p>
+                        <a href="tel:796829742"><i class="fas fa-mobile-alt"></i>796 829 742</a></p>
+                        <p> <a href="mailto:kontakt@active-baby.pl"><i class="fas fa-envelope"></i>kontakt@active-baby.pl</a></p>
+                </div>
+                   
+                            <p>NIP: 5542998500</p>
+                            <p class="copy">Copyright &copy; 2022</p>
+            </div>
+        </footer>
+    </div>
+    <div id="register" class="hideRegisterBtn">
+        <form>
+            <h1>Zapisy na zajęcia nauki pływania</h1>
+            <button id="closeFormBtn"><i id="closeArrow" class="fas fa-long-arrow-alt-left"></i></button>
+            <p>Wybór zajęć:</p>
+            <div class="selection">
+            <select name="" id="select" onChange="update()">
+                <optgroup label="GOSIR Osielsko" >
+                    <option value="1">Wtorek</option>
+                </optgroup>
+                <optgroup label="Aqua Fordon" >
+                    <option value="1">Sobota</option>
+                </optgroup>
+            </select>
+            <select name="" id="thuesday">
+                <option value="1">Wybierz godzinę</option>
+                <option value="2">17:00-17:45</option>
+                <option value="3">17:45-18:30</option>
+                <option value="4">18:30-19:15</option>
+                <option value="5">19:15-20:00</option>
+            </select>
+            <select name="" id="saturday">
+                <option value="1">Wybierz godzinę</option>
+                <option value="2">12:00-12:45</option>
+                <option value="3">13:00-13:45</option>
+            </select>
+        </div>
+            <p>Dane dziecka:</p>
+            <div class="selection">
+            <input id="childName" class="formInput" type="text" name="name" value="Imię" onfocus="this.value='' " >
+            <input id='childLastName' class="formInput" type="text" name="lastName" value="Nazwisko" onfocus="this.value='' " >
+            <input id="childBirth" class="formInput" type="text" name="birth" value="Data urodzenia" onfocus="this.value='' " >
+            <input id="childAdress" class="formInput" type="text" value="Adres zamieszkania" onfocus="this.value='' " >
+        </div>
+            <p>Dane rodzica:</p>
+            <div class="selection">
+            <input id="parentName" class="formInput" type="text" name="name" value="Imię" onfocus="this.value='' " >
+            <input id="parentLastName" class="formInput" type="text" name="lastName" value="Nazwisko" onfocus="this.value='' " >
+            <input id="parentEmail" class="formInput" type="email" name=""  value="email" onfocus="this.value='' " >
+            <input id="parentPhone" class="formInput" type="tel" name=""  value="Numer telefonu" onfocus="this.value='' " >
+        </div>
+        <div class="formBtn">
+            <button id="submitBtn" >Wyślij</button> 
+        </div>
+        </form>
+    </div>
+    
+    <div class="loader-wrapper">
+        <div class="dot"></div>
+    </div>
+    <script src="./scripts/script.js"> </script>
+</body>
+</html>

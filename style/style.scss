@@ -56,11 +56,12 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: space-around;
+        align-items: center;
     }
 
     li {
-        font-size: 1.8rem;
-        margin: .25rem 2rem;
+        font-size: 1.6rem;
+        margin:0rem 2rem .5rem 2rem;
 
         :hover {
             cursor: pointer;
@@ -69,11 +70,12 @@ body {
         }
 
         img {
-            display: block;
-            height: 100%;
-            position: absolute;
             left: 4%;
             top: 0;
+            height: 120px;
+        }
+        .fas{
+            display: block;
         }
     }
 
@@ -128,18 +130,15 @@ body {
 }
 
 #menu {
-    // background-image: url('/first\ main\ photo.jpg');
-    // background-repeat: no-repeat;
-    // background-size: cover;
     height: 100vh;
     width: 100vw;
 }
 
 nav {
-    background-color: #e4dffcb4;
+    background-color: #eaeaeae3;
     position: fixed;
     width: 100vw;
-    height: 100px;
+    height: 175px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -153,7 +152,7 @@ nav {
 }
 
 .slide2 {
-    background-image: url('../photos/slide2.jpg');
+    background-image: url('../photos/second\ main\ photo.jpg');
 }
 
 .slide3 {
@@ -354,20 +353,41 @@ h1 {
      display: flex;
     justify-content: center;
      flex-direction: column;
-     
+     align-items: center;
+     margin-top: 0;
+     padding-top: 0;
+     text-align: center;
 
     ul {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         flex-wrap: wrap;
         align-content: center;
         align-items: center;
         color: $navy;
-        margin: 3rem 0;
 
         li {
-            padding: 1rem;
+            padding: 0;
             text-align: center;
+            width: 25%;
+        border-radius: 5px;
+        box-shadow: 8px 4px 20px 0px rgba(66, 68, 90, 0.48);
+        margin: 1rem;
+       
+        p{
+            background-color: $lightNavy;
+            color: white;
+            font-weight: bold;
+            text-transform: uppercase;
+            margin: 1rem 1rem -1rem 1rem;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+        p:hover, 
+        img:hover{
+            color: white;
+            cursor: auto;
+        }
         }
     }
 
@@ -381,9 +401,16 @@ h1 {
         flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
+        align-items: center;
         align-content: center;
         text-align: center;
-
+        box-shadow: 8px 4px 20px 0px rgba(66, 68, 90, 0.48);
+        padding: .1rem;
+        margin: 1rem;
+        width: fit-content;
+        border-radius: 5px;
+background: #D8A0C9;
+background: linear-gradient(0deg, $superLightNavy 0%, #D8A0C9 100%);
         .btn {
             border-radius: 15px;
             padding: .75rem 1.5rem;
@@ -400,6 +427,9 @@ h1 {
             font-weight: bold;
             font-size: 1.25rem;
             margin: .5rem;
+            background-color: rgba(255, 255, 252, 1);
+            border-radius: 5px;
+            padding: 3rem;
         }
         strong{
             color: $navy;
@@ -408,13 +438,14 @@ h1 {
             margin: .5rem;  
         }
     }
+    .offerBtn:hover{
+        cursor: pointer;
+        box-shadow: 8px 4px 14px 0px rgba(66, 68, 90, 0.25);
+        transition: ease-in-out .3s;
+    }
 }
     .btn:hover {
         cursor: pointer;
-    }
-
-    .btn:active {
-        box-shadow: $darkerViolet 0px 4px 12px -2px, $lighterViolet 0px 3px 7px -3px;
     }
 
     .offerBox {
@@ -485,14 +516,15 @@ h1 {
     min-height: 100vh;
     width: 100%;
     margin: 0;
+    margin-top: -5rem;
     display: flex;
-    justify-content: center;
     flex-direction: column;
-
+    background: $lighterViolet;
     h1 {
         font-size: 3.5rem;
         font-family: 'Roboto', sans-serif;
        text-align: center;
+       color: white;
     }
 
     .galleryBox {
@@ -527,6 +559,9 @@ h1 {
     z-index: 9999;
     max-width: 100vw;
     padding: 5% !important;
+    :hover{
+        transform: none;
+    }
 }
 
 
@@ -539,6 +574,10 @@ h1 {
     align-content: center;
     flex-direction: column;
     justify-content: center;
+    background-image: url('../photos/contact\ bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
 
     h1{
         text-align: center;
@@ -548,14 +587,17 @@ h1 {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        width: 100%;
+        width: 50%;
         height: 100%;
         align-content: center;
         justify-content: center;
         text-align: center;
-
-        
-
+        align-items: center;
+background-color: #f5f1f1f1;
+padding: 1rem;
+        border-radius: 9px;
+        box-shadow: 8px 4px 14px 0px rgba(66, 68, 90, 0.25);
+border:1px solid $lighterViolet ;
         p,
         h4 {
             font-size: 1.5rem;
@@ -595,7 +637,7 @@ footer {
     flex-direction: row;
     justify-content: space-evenly;
     padding: .5rem 2rem;
-    background-color: #e2cde9;
+    background-color: #eaeaeae3;
 
     h4 {
         text-align: center;
@@ -702,7 +744,7 @@ footer {
             justify-content: center;
             align-items: center;
         }
-        button{
+        #submitBtn{
             padding: .75rem;
             margin: 1rem 8rem;
             background: rgb(244, 242, 242);
@@ -712,13 +754,29 @@ footer {
             cursor: pointer;
             width: 200px;
         }
-        button:hover{
+        #submitBtn:hover{
                 background-color: $lightNavy;
                 transition: ease-in-out .3s;
                 color: white;
             
         }
-        
+        #closeFormBtn{
+            background-color: transparent;
+            outline: none;
+            border: none;
+            position: absolute;
+            left: 50px;
+            top: 20px;
+            i{
+                font-size: 70px;
+                color: $navy;
+            
+            }
+            
+        }
+        #closeFormBtn:hover{
+            cursor: pointer;
+        }
     }
 }
 
@@ -732,7 +790,6 @@ footer {
 }
 
 
-
 @media all and (max-width: 768px) {
     .fullScreen {
         padding: 0 !important;
@@ -743,7 +800,7 @@ footer {
     }
 
     .slide2 {
-        background-image: url('../photos/slide2phone.jpg');
+        background-image: url('../photos/main\ phone\ 2.jpg');
     }
 
     .slide3 {
@@ -754,12 +811,9 @@ footer {
         color: transparent;
     }
 
-    #offer,
-    #gallery,
-    #contact {
-        margin-top: 5rem;
-    }
-
+   .slideContent button{
+    font-size: 20px;
+   }
     nav {
         height: 100vh;
         width: 100vw;
@@ -778,13 +832,9 @@ footer {
             text-align: center;
 
         }
-
-        li img {
-            height: 20vh;
-
+        .logo{
+            height: 80px;
         }
-
-
     }
 
     .activeMenu {
@@ -800,7 +850,7 @@ footer {
         width: 100%;
         display: flex;
         max-width: 100vw;
-        height: 100px;
+        height: 120px;
 
         .menuBtn {
             right: 10vw;
@@ -840,6 +890,7 @@ footer {
     h1,
     #gallery h1 {
         margin: 0;
+        margin-top: 0;
         margin-bottom: 2rem;
         text-align: center;
         font-size: 2.5rem;
@@ -847,6 +898,7 @@ footer {
 
     img {
         max-width: 250px;
+        max-height: 250px;
     }
 
     #menu li {
@@ -857,6 +909,7 @@ footer {
 #offer .offerBtn .btn{
     font-size: 1.5rem;
 }
+
 
     footer {
         font-size: .7rem;
@@ -875,8 +928,13 @@ footer {
         margin-right: 0;
     }
 
-    #contact .contactBox p {
-        font-size: 1rem;
+    #contact .contactBox{
+        
+        width: 80%;
+        padding: .5rem;
+        p{
+            font-size: 1rem;
+        }
     }
 
     footer .footerBox .telAndMail {
