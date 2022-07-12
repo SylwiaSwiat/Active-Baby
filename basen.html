@@ -19,11 +19,16 @@
             align-items: center;
             font-size: .5rem;
         }
+       
        .offerList{
         margin: 0 2rem 1rem 2rem;
         
        }
+       .offerList li{
+        margin: .5rem !important;
+       }
        .offerList img{
+        margin: 0;
         padding: 0 .5rem;
         max-height: 50px;
        }
@@ -31,15 +36,16 @@
         margin: 12rem 2rem 1rem 2rem;
         
        }
-       #gosir{
+       #gosir, #fordon{
         width: 100%;
         border-radius: 5px;
         box-shadow: 8px 4px 20px 0px rgba(66, 68, 90, 0.48) !important;
        }
        
        #menu .offerListPools  img{
-        height: 500px;
-padding: 3rem 0;
+       height: 500px;
+padding:0;
+border-radius: 5px 5px 0 0;
        }
        #offer ul li{
         font-size: 1rem;
@@ -58,7 +64,7 @@ padding: 3rem 0;
         border-radius: 9px;
         box-shadow: 8px 4px 14px 0px rgba(66, 68, 90, 0.25);
 border:1px solid #d8a0c8;
-width: 80%;
+
        }
        #offer .offerBtn p{
         padding: .5rem;
@@ -96,15 +102,28 @@ width: 80%;
                     16:45 - 17:30 <br>
                     17:30 - 18:15 <br>
                     18:15 - 19:00</p>
+                    <p>Wtorek: 5 zajęć = 200zł <br>
+                        Godziny: <br>
+                        17:00 - 17:45 <br>
+                        17:45 - 18:30 <br>
+                        18:30 - 19:15 <br>
+                        19:15 - 12:00</p>
                     </li>
-                    <li>Aqua Fordon</li>
+                    <li id="fordon">
+                    <img src="./photos/fordon.jpg" alt="">
+                    <h3>Aqua Fordon</h3> 
+                    <p>Sobota: 4 zajęcia 160zł <br>
+                    Godziny: <br>
+                    12:00 - 12:45 <br>
+                    13:00 - 13:45 </p>   
+                        </li>
                     </ul>
                     
                     <div class="offerBtn">
                         <p>Informacje organizacyjne</p>
                         <p>Na basen zabieramy:</p>
                         <ul class="offerList">
-                            <li> <img src="./photos/swimming suit.png" alt=""> Kąpielówki lub strój kąpielowy (młodsze dzieci można ubrać w pianki)</li>
+                            <li> Kąpielówki lub strój kąpielowy (młodsze dzieci można ubrać w pianki)</li>
                             <li>Klapki basenowe</li>
                             <li>Czepek (materiałowy lub silikonowy)</li>
                             <li>Okularki do pływania</li>
@@ -150,11 +169,19 @@ width: 80%;
             <div class="selection">
             <select name="" id="select" onChange="update()">
                 <optgroup label="GOSIR Osielsko" >
-                    <option value="1">Wtorek</option>
+                    <option value="1">Poniedziałek</option>
+                    <option value="2">Wtorek</option>
                 </optgroup>
                 <optgroup label="Aqua Fordon" >
                     <option value="1">Sobota</option>
                 </optgroup>
+            </select>
+            <select name="" id="monday">
+                <option value="1">Wybierz godzinę</option>
+                <option value="2">16:00-16:45</option>
+                <option value="3">16:45-17:30</option>
+                <option value="4">17:30-18:15</option>
+                <option value="5">18:15-19:00</option>
             </select>
             <select name="" id="thuesday">
                 <option value="1">Wybierz godzinę</option>

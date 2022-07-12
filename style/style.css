@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Biryani:wght@200&family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Aleo&family=Biryani:wght@200&family=Roboto:wght@100&family=Rubik+Moonrocks&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -58,8 +58,9 @@ body {
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -70,8 +71,8 @@ body {
 #offer li,
 #gallery li,
 #contact li {
-  font-size: 1.6rem;
-  margin: 0rem 2rem .5rem 2rem;
+  font-size: 1.4rem;
+  margin: 0 1rem;
 }
 
 #menu li :hover,
@@ -107,7 +108,16 @@ body {
 #gallery a,
 #contact a {
   text-decoration: none;
-  color: #045493;
+  color: #d6a0c4;
+}
+
+#menu .logo,
+#about .logo,
+#offer .logo,
+#gallery .logo,
+#contact .logo {
+  height: 150px;
+  margin: 0;
 }
 
 .loader-wrapper {
@@ -181,7 +191,8 @@ body {
 }
 
 nav {
-  background-color: #eaeaeae3;
+  background-color: #382142;
+  opacity: .95;
   position: fixed;
   width: 100vw;
   height: 175px;
@@ -208,7 +219,7 @@ nav {
 }
 
 .slide3 {
-  background-image: url("../photos/slide3.jpg");
+  background-image: url("../photos/slide2.jpg");
 }
 
 #slide4 {
@@ -465,16 +476,19 @@ h1 {
   margin-top: 0;
   padding-top: 0;
   text-align: center;
+  background-image: url("../photos/Bubble-4s-1084px.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 #offer ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   -ms-flex-line-pack: center;
@@ -483,16 +497,30 @@ h1 {
       -ms-flex-align: center;
           align-items: center;
   color: #045493;
+  border-radius: 5px;
+}
+
+#offer ul h2 {
+  font-family: 'Rubik Moonrocks', cursive;
+  background: #045493;
+  background: repeating-linear-gradient(to top, #045493 0%, #DA66BA 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 3rem;
+  letter-spacing: .25rem;
+}
+
+#offer ul img {
+  max-height: 500px;
+  width: 100%;
 }
 
 #offer ul li {
   padding: 0;
   text-align: center;
-  width: 25%;
-  border-radius: 5px;
-  -webkit-box-shadow: 8px 4px 20px 0px rgba(66, 68, 90, 0.48);
-          box-shadow: 8px 4px 20px 0px rgba(66, 68, 90, 0.48);
-  margin: 1rem;
+  margin: 5rem 0;
 }
 
 #offer ul li p {
@@ -500,9 +528,9 @@ h1 {
   color: white;
   font-weight: bold;
   text-transform: uppercase;
-  margin: 1rem 1rem -1rem 1rem;
   padding: 1rem;
-  border-radius: 5px;
+  border-radius: 0 0 5px 5px;
+  margin-top: 1rem;
 }
 
 #offer ul li p:hover,
@@ -605,10 +633,6 @@ h1 {
           justify-content: center;
 }
 
-.offerBox img {
-  max-width: 100%;
-}
-
 .box {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -687,7 +711,6 @@ h1 {
   min-height: 100vh;
   width: 100%;
   margin: 0;
-  margin-top: -5rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -723,43 +746,15 @@ h1 {
 
 #gallery .galleryBox .galleryPhoto {
   padding: 1rem;
-  -webkit-transition: -webkit-transform .5s ease;
-  transition: -webkit-transform .5s ease;
-  transition: transform .5s ease;
-  transition: transform .5s ease, -webkit-transform .5s ease;
+  -webkit-transition: .2s;
+  transition: .2s;
+  border-radius: 9px;
 }
 
 #gallery .galleryBox .galleryPhoto:hover {
+  cursor: pointer;
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
-  cursor: pointer;
-}
-
-.fullScreen {
-  position: fixed;
-  height: 100vh;
-  width: 100vw;
-  top: 0;
-  -webkit-transition: opacity all 0.5s ease;
-  transition: opacity all 0.5s ease;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  background-color: #021820;
-  z-index: 9999;
-  max-width: 100vw;
-  padding: 5% !important;
-}
-
-.fullScreen :hover {
-  -webkit-transform: none;
-          transform: none;
 }
 
 #contact {
@@ -811,7 +806,9 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #f5f1f1f1;
+  background-color: rgba(255, 255, 255, 0.75);
+  -webkit-backdrop-filter: blur(5px);
+          backdrop-filter: blur(5px);
   padding: 1rem;
   border-radius: 9px;
   -webkit-box-shadow: 8px 4px 14px 0px rgba(66, 68, 90, 0.25);
@@ -822,7 +819,7 @@ h1 {
 #contact .contactBox p,
 #contact .contactBox h4 {
   font-size: 1.5rem;
-  color: #045493;
+  color: #2c64ab;
   padding: .9rem .5rem;
 }
 
@@ -835,7 +832,7 @@ h1 {
 
 #contact .contactBox p a,
 #contact .contactBox h4 a {
-  color: #045493;
+  color: #2c64ab;
 }
 
 #contact .contactBox p:hover,
@@ -865,7 +862,8 @@ footer {
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
   padding: .5rem 2rem;
-  background-color: #eaeaeae3;
+  background-color: #382142;
+  opacity: .9;
 }
 
 footer h4 {
@@ -888,7 +886,7 @@ footer .footerBox {
       -ms-flex-pack: center;
           justify-content: center;
   padding: .5rem 2rem;
-  color: #045493;
+  color: #d8a0c8;
   text-align: center;
 }
 
@@ -914,17 +912,17 @@ footer .footerBox .telAndMail p:last-of-type {
 }
 
 footer .footerBox a {
-  color: #045493;
+  color: #d8a0c8;
   text-decoration: none;
 }
 
 footer .footerBox i {
-  color: #a694c4;
+  color: #ba9cc4;
   margin-right: .5rem;
 }
 
 footer .footerBox i:hover {
-  color: #d6a0c4;
+  color: #ba9cc4;
 }
 
 footer .footerBox .copy {
@@ -1258,7 +1256,13 @@ footer .footerBox .copy {
     -ms-flex-line-pack: center;
         align-content: center;
     border-radius: 5px;
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+  }
+  #register form #closeFormBtn {
+    left: -320px;
+    top: -45px;
   }
   #register form input, #register form select {
     padding: .75rem;
@@ -1302,6 +1306,7 @@ footer .footerBox .copy {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 0;
   }
   #register form button {
     padding: .75rem;

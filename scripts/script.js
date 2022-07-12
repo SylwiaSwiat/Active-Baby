@@ -40,10 +40,19 @@ registerBtn.addEventListener('click', showFormular)
 const update = ()=>{
     let option = select.options[select.selectedIndex].text
     console.log(option)
-    if(option==="Wtorek") {saturday.style.display='none'
+    if(option==="Poniedziałek") {
+        thuesday.style.display='none'
+     saturday.style.display='none'
+    monday.style.display='flex'
+}
+    if(option==="Wtorek") {
+        monday.style.display='none'
+        saturday.style.display='none'
 thuesday.style.display='flex'
     }
-if(option==='Sobota') {thuesday.style.display='none'
+if(option==='Sobota') {
+    monday.style.display='none'
+    thuesday.style.display='none'
     saturday.style.display='flex'
 }
 }

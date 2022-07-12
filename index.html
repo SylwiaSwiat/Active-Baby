@@ -6,9 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Active Baby</title>
     <link rel="stylesheet" href="./style/style.css">
+    <link rel="stylesheet" href="./style/lightbox.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="./scripts/lightbox-plus-jquery.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://kit.fontawesome.com/13f87f03f4.js" crossorigin="anonymous"></script>
 </head>
@@ -90,16 +92,12 @@
     
 </div>
         </div>
-        <svg width="100%" height="100%" id="svg" viewBox="0 0 1440 600" xmlns="http://www.w3.org/2000/svg" class="transition duration-300 ease-in-out delay-150"><path d="M 0,600 C 0,600 0,200 0,200 C 177.33333333333331,215.06666666666666 354.66666666666663,230.13333333333335 524,230 C 693.3333333333334,229.86666666666665 854.6666666666667,214.53333333333336 1006,207 C 1157.3333333333333,199.46666666666664 1298.6666666666665,199.73333333333332 1440,200 C 1440,200 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="#9b93c388" class="transition-all duration-300 ease-in-out delay-150 path-0"></path><path d="M 0,600 C 0,600 0,400 0,400 C 132.2666666666667,371.4666666666667 264.5333333333334,342.93333333333334 412,360 C 559.4666666666666,377.06666666666666 722.1333333333332,439.73333333333335 896,454 C 1069.8666666666668,468.26666666666665 1254.9333333333334,434.1333333333333 1440,400 C 1440,400 1440,600 1440,600 Z" stroke="none" stroke-width="0" fill="#ba9cc4" class="transition-all duration-300 ease-in-out delay-150 path-1"></path></svg>
         <div id="gallery">
             <h1>Galeria</h1>
             <div class="galleryBox">
-                <img src="./photos/gallery1.jpg" alt="" class="galleryPhoto" width="400px" height="400">
-                <img src="./photos/gallery2.jpg" alt="" class="galleryPhoto" width="400px" height="400">
-                <img src="./photos/slide2.jpg" alt="" class="galleryPhoto" width="400px" height="400">
-                <img src="./photos/IMG-20220611-WA0004.jpg" alt="" class="galleryPhoto" width="400px" height="400">
-                <img src="./photos/IMG-20220611-WA0019.jpg" alt="" class="galleryPhoto" width="400px" height="400">
-                <img src="./photos/IMG-20220611-WA0027.jpg" alt="" class="galleryPhoto" width="400px" height="400">
+              <a href="./photos/gallery1.jpg" data-lightbox="mygallery"><img src="./photos/gallery1.jpg" alt="" class="galleryPhoto" width="400px" height="400"></a>  
+              <a href="./photos/gallery2.jpg" data-lightbox="mygallery"><img src="./photos/gallery2.jpg" alt="" class="galleryPhoto" width="400px" height="400"></a>  
+              <a href="./photos/slide3.jpg" data-lightbox="mygallery"><img src="./photos/slide3.jpg" alt="" class="galleryPhoto" width="400px" height="400"></a>  
             </div>
             
         </div>
@@ -138,11 +136,19 @@
             <div class="selection">
             <select name="" id="select" onChange="update()">
                 <optgroup label="GOSIR Osielsko" >
-                    <option value="1">Wtorek</option>
+                    <option value="1">Poniedziałek</option>
+                    <option value="2">Wtorek</option>
                 </optgroup>
                 <optgroup label="Aqua Fordon" >
                     <option value="1">Sobota</option>
                 </optgroup>
+            </select>
+            <select name="" id="monday">
+                <option value="1">Wybierz godzinę</option>
+                <option value="2">16:00-16:45</option>
+                <option value="3">16:45-17:30</option>
+                <option value="4">17:30-18:15</option>
+                <option value="5">18:15-19:00</option>
             </select>
             <select name="" id="thuesday">
                 <option value="1">Wybierz godzinę</option>
