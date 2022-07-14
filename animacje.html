@@ -20,27 +20,47 @@
             align-items: center;
         }
        #offer ul{
-        margin: 12rem 2rem 1rem 2rem;
+        margin-top: 12rem;
         border: 3px solid #ba9cc4;
         background-color: white;
-        list-style: outside;
+        list-style: disc;
+       }
+       .offerParty{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        max-width: 400px;
+       }
+       .offerParty h2{
+        text-align: center;
        }
        #offer ul li{
-        font-size: 1.25rem;
-        margin: 1rem;
-
+        font-size: 1rem;
+        margin: .25rem ;
        }
        .transfer{
-        font-size: 0.7rem;
+        font-size: 1rem;
+        background-color: white;
+        border-radius: 20px;
+        padding: .5rem;
        }
        footer{
         margin-top: 1rem;
        }
        @media all and (max-width: 768px){
-        #offer ul li{
-            width:100%;
-            font-size: .7rem;
-        }
+#offer ul li{
+    padding: .25rem;
+    font-size: .75rem;
+}
+img{
+    max-width: none;
+}
+#offer .offerParty h2{
+    font-size: 1rem;
+}
+.transfer{
+    font-size: .75rem;
+}
        }
     </style>
 </head>
@@ -49,10 +69,10 @@
         
         <div id="menu">
             
-            <nav>
+            <nav id="nav">
                 <button class="menuCloseBtn"><i class="fas fa-times"></i></button>
                 <ul>
-                    <li><img src="./photos/ab_logo_przezroczyste.svg" alt="logo" class="logo"></li>
+                    <li><a href="./index.html#menu"><img src="./photos/baby shark_logo_przeroczyste (1).png" alt="logo" class="logo"></a></li>
                     <li><a href="./index.html#menu" class="menuEl">Strona Główna</a></li>
                     <!-- <li><a href="#about" class='menuEl'>O firmie</a> </li> -->
                     <li><a href="./index.html#offer" class="menuEl">Oferta</a> </li>
@@ -62,9 +82,12 @@
                     <li><a href="./index.html#contact" class="menuEl">Kontakt</a></li>
                 </ul>
             </nav>
-            
+            <div class="menuToggle">
+                <li><img src="./photos/ab_logo_przezroczyste.svg" alt="logo" class="logoMenu"></li>
+                <button class="menuBtn"><i class="fas fa-bars"></i></button>
+            </div>
             <div id="offer" >
-                <ul class="offerList">
+                <div class="offerParty"><ul class="offerList">
                     <h2>Urodziny tradycyjne</h2>
                     <li>Zamykanie w bańce mydlanej</li>
                     <li>Wielkie bańki mydlane XXL</li>
@@ -74,7 +97,8 @@
                     <li>Tańce</li>
                     <li>Malowanie buzi</li>
                     <img src="./photos/lidya-nada-MD_ha01Bk7c-unsplash.jpg" alt="">
-                </ul>
+                </ul></div>
+                
                 <p class="transfer">Dane do przelewu:
                     <span>Nazwa Odbiorcy: ACTIVE BABY Patryk Martas</span>
                     <span>Adres Odbiorcy: ul. Altanowa 1/6, 85-790 Bydgoszcz</span>
@@ -161,6 +185,6 @@
     <div class="loader-wrapper">
         <div class="dot"></div>
     </div>
-    <script src="./scripts/script.js"> </script>
+    <script src="./scripts/offers.js"> </script>
 </body>
 </html>

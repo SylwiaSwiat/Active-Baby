@@ -6,7 +6,6 @@ window.addEventListener('load', () => {
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
-    if(window.innerWidth> 768){
   if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
     document.querySelector("#nav").style.background = "#382142";
     document.querySelector(".logo").src = "./photos/ab_logo_przezroczyste.svg";
@@ -15,7 +14,7 @@ function scrollFunction() {
     document.querySelector(".logo").src = "./photos/baby shark_logo_przeroczyste (1).png";
   }
 }
-}
+
 
 let slideImages = document.querySelectorAll('.slide');
 let arrowRight = document.querySelector('#arrowRight');
@@ -71,7 +70,6 @@ if(option==='Sobota') {
 }
 update();
 closeFormBtn.addEventListener('click', closeFormular)
- registerBtn2.addEventListener('click', showFormular)
 
 const formInfo=()=>{
     let valChildName = document.querySelector('#childName').value
@@ -93,59 +91,6 @@ const formInfo=()=>{
 }
 submitBtn.addEventListener('click', formInfo)
 
-
-const reset = () => {
-    for (let i = 0; i < slideImages.length; i++) {
-        slideImages[i].style.display = 'none';
-    }
-}
-
-const startSlide = () => {
-    reset();
-    slideImages[0].style.display = 'block';
-}
-
-const showPrev = () => {
-    reset();
-    slideImages[current - 1].style.display = 'block';
-    current--;
-
-}
-
-arrowLeft.addEventListener('click', () => {
-    if (current === 0) {
-        current = slideImages.length;
-    }
-    showPrev();
-})
-
-const showNext = () => {
-    reset();
-    slideImages[current + 1].style.display = 'block';
-    current++;
-
-}
-
-arrowRight.addEventListener('click', () => {
-    if (current === slideImages.length - 1) {
-        current = -1
-    }
-    showNext();
-})
-
-galleryPhotos.forEach((galleryPhoto) => {
-    galleryPhoto.addEventListener('click', () => {
-        galleryPhoto.classList.toggle('fullScreen')
-    })
-})
-
-setInterval(()=>{
-    if (current === slideImages.length - 1) {
-        current = -1
-    }
-    showNext()
-}, 5000);
-
 const activate = ()=> nav.classList.add('activeMenu')
 menuBtn.addEventListener('click', activate)
 
@@ -155,6 +100,6 @@ menuCloseBtn.addEventListener('click', deactivate)
 
 menu.forEach((menuEl)=> menuEl.addEventListener('click', deactivate))
 
-startSlide();
+
   
  

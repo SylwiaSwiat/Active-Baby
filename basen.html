@@ -18,23 +18,49 @@
         #offer{
             align-items: center;
             font-size: .5rem;
+            
         }
        
        .offerList{
         margin: 0 2rem 1rem 2rem;
         
+        
        }
        .offerList li{
         margin: .5rem !important;
+
        }
        .offerList img{
         margin: 0;
         padding: 0 .5rem;
         max-height: 50px;
        }
-       .offerListPools {
+       #offer .offerListPools {
         margin: 12rem 2rem 1rem 2rem;
-        
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+       }
+       #offer .offerListPools div{
+        margin: 1rem;
+        width: 400px;
+       }
+       #offer .offerListPools li{
+        max-width: 400px;
+        background: white;
+       }
+       #offer .offerListPools li p{
+        color: #045493;
+        text-transform: none;
+        padding: 1rem;
+        border-radius: 0;
+        margin-top: 1rem;
+        background: white;
+       }
+       #offer .offerListPools li h3{
+text-transform: uppercase;
+font-weight: bold;
        }
        #gosir, #fordon{
         width: 100%;
@@ -52,11 +78,11 @@ border-radius: 5px 5px 0 0;
         box-shadow:none;
         width: 100%;
        }
-       #offer ul li h3{
-        text-transform: uppercase;
-       }
        .transfer{
-        font-size: 0.7rem;
+        font-size: 1rem;
+        background-color: white;
+        border-radius: 20px;
+        padding: .5rem;
        }
        #offer .offerBtn {
         font-size: 1rem;
@@ -64,11 +90,18 @@ border-radius: 5px 5px 0 0;
         border-radius: 9px;
         box-shadow: 8px 4px 14px 0px rgba(66, 68, 90, 0.25);
 border:1px solid #d8a0c8;
+width: auto;
 
+       }
+       #offer .offerBtn ul{
+        list-style: outside;
+       }
+       #offer .offerBtn ul li{
+        text-align: left;
        }
        #offer .offerBtn p{
         padding: .5rem;
-        font-size: 1rem;
+        color: #045493;
        }
     </style>
 </head>
@@ -77,10 +110,10 @@ border:1px solid #d8a0c8;
         
         <div id="menu">
             
-            <nav>
+            <nav id="nav">
                 <button class="menuCloseBtn"><i class="fas fa-times"></i></button>
                 <ul>
-                    <li><img src="./photos/ab_logo_przezroczyste.svg" alt="logo" class="logo"></li>
+                    <li><a href="./index.html#menu"><img src="./photos/baby shark_logo_przeroczyste (1).png" alt="logo" class="logo"></a></li>
                     <li><a href="./index.html#menu" class="menuEl">Strona Główna</a></li>
                     <!-- <li><a href="#about" class='menuEl'>O firmie</a> </li> -->
                     <li><a href="./index.html#offer" class="menuEl">Oferta</a> </li>
@@ -90,11 +123,14 @@ border:1px solid #d8a0c8;
                     <li><a href="./index.html#contact" class="menuEl">Kontakt</a></li>
                 </ul>
             </nav>
-            
+            <div class="menuToggle">
+                <li><img src="./photos/ab_logo_przezroczyste.svg" alt="logo" class="logoMenu"></li>
+                <button class="menuBtn"><i class="fas fa-bars"></i></button>
+            </div>
             <div id="offer" >
                     <ul class="offerListPools">
-                    <li id="gosir">
-                        <img src="./photos/liane-metzler-P1s57wzVCp0-unsplash.jpg" alt="">
+                    <div><li id="gosir">
+                        <!-- <img src="./photos/liane-metzler-P1s57wzVCp0-unsplash.jpg" alt=""> -->
                         <h3>Kurs wakacyjny - GOSIR Osielsko </h3>
                    <p>Poniedziałek: 4 zajęcia = 160zł <br>
                     Godziny: <br>
@@ -108,19 +144,18 @@ border:1px solid #d8a0c8;
                         17:45 - 18:30 <br>
                         18:30 - 19:15 <br>
                         19:15 - 12:00</p>
-                    </li>
-                    <li id="fordon">
-                    <img src="./photos/fordon.jpg" alt="">
+                    </li></div>
+                   <div><li id="fordon">
+                    <!-- <img src="./photos/fordon.jpg" alt=""> -->
                     <h3>Aqua Fordon</h3> 
                     <p>Sobota: 4 zajęcia 160zł <br>
                     Godziny: <br>
                     12:00 - 12:45 <br>
                     13:00 - 13:45 </p>   
-                        </li>
+                        </li></div> 
                     </ul>
                     
                     <div class="offerBtn">
-                        <p>Informacje organizacyjne</p>
                         <p>Na basen zabieramy:</p>
                         <ul class="offerList">
                             <li> Kąpielówki lub strój kąpielowy (młodsze dzieci można ubrać w pianki)</li>
@@ -219,6 +254,6 @@ border:1px solid #d8a0c8;
     <div class="loader-wrapper">
         <div class="dot"></div>
     </div>
-    <script src="./scripts/script.js"> </script>
+    <script src="./scripts/offers.js"> </script>
 </body>
 </html>
