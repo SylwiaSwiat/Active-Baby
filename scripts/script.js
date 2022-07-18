@@ -36,62 +36,62 @@ let select = document.querySelector('#select')
 let saturday = document.querySelector("#saturday")
 let thuesday = document.querySelector('#thuesday')
 
-const showFormular = () => {
-    register.classList.remove('hideRegisterBtn')
-    register.classList.add('showRegister')
-    container.style.display='none'
-}
+// const showFormular = () => {
+//     register.classList.remove('hideRegisterBtn')
+//     register.classList.add('showRegister')
+//     container.style.display='none'
+// }
 
-registerBtn.addEventListener('click', showFormular)
-  const closeFormular = () => {
-      register.classList.add('hideRegisterBtn')
-      register.classList.remove('showRegister')
-      container.style.display='block'
- }
+// registerBtn.addEventListener('click', showFormular)
+//   const closeFormular = () => {
+//       register.classList.add('hideRegisterBtn')
+//       register.classList.remove('showRegister')
+//       container.style.display='block'
+//  }
 
 
-const update = ()=>{
-    let option = select.options[select.selectedIndex].text
-    console.log(option)
-    if(option==="Poniedziałek") {
-        thuesday.style.display='none'
-     saturday.style.display='none'
-    monday.style.display='flex'
-}
-    if(option==="Wtorek") {
-        monday.style.display='none'
-        saturday.style.display='none'
-thuesday.style.display='flex'
-    }
-if(option==='Sobota') {
-    monday.style.display='none'
-    thuesday.style.display='none'
-    saturday.style.display='flex'
-}
-}
-update();
-closeFormBtn.addEventListener('click', closeFormular)
- registerBtn2.addEventListener('click', showFormular)
+// const update = ()=>{
+//     let option = select.options[select.selectedIndex].text
+//     console.log(option)
+//     if(option==="Poniedziałek") {
+//         thuesday.style.display='none'
+//      saturday.style.display='none'
+//     monday.style.display='flex'
+// }
+//     if(option==="Wtorek") {
+//         monday.style.display='none'
+//         saturday.style.display='none'
+// thuesday.style.display='flex'
+//     }
+// if(option==='Sobota') {
+//     monday.style.display='none'
+//     thuesday.style.display='none'
+//     saturday.style.display='flex'
+// }
+// }
+// update();
+// closeFormBtn.addEventListener('click', closeFormular)
+//  registerBtn2.addEventListener('click', showFormular)
 
-const formInfo=()=>{
-    let valChildName = document.querySelector('#childName').value
-    let valChildLastName = document.querySelector('#childLastName').value
-    let valChildBirth = document.querySelector('#childBirth').value
-    let valChildAdress = document.querySelector('#childAdress').value
-    let valParentName = document.querySelector('#parentName').value
-    let valParentLastName = document.querySelector('#parentLastName').value
-    let valParentEmail = document.querySelector('#parentEmail').value
-    let valParentPhone = document.querySelector('#parentPhone').value
-    console.log(valChildName)
-    console.log(valChildLastName)
-    console.log(valChildBirth)
-    console.log(valChildAdress)
-    console.log(valParentName)
-    console.log(valParentLastName)
-    console.log(valParentEmail)
-    console.log(valParentPhone)
-}
-submitBtn.addEventListener('click', formInfo)
+// const formInfo=()=>{
+//     let valChildName = document.querySelector('#childName').value
+//     let valChildLastName = document.querySelector('#childLastName').value
+//     let valChildBirth = document.querySelector('#childBirth').value
+//     let valChildAdress = document.querySelector('#childAdress').value
+//     let valParentName = document.querySelector('#parentName').value
+//     let valParentLastName = document.querySelector('#parentLastName').value
+//     let valParentEmail = document.querySelector('#parentEmail').value
+//     let valParentPhone = document.querySelector('#parentPhone').value
+//     console.log(valChildName)
+//     console.log(valChildLastName)
+//     console.log(valChildBirth)
+//     console.log(valChildAdress)
+//     console.log(valParentName)
+//     console.log(valParentLastName)
+//     console.log(valParentEmail)
+//     console.log(valParentPhone)
+// }
+// submitBtn.addEventListener('click', formInfo)
 
 
 const reset = () => {
