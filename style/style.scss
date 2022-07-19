@@ -85,8 +85,8 @@ font-weight: bold;
         transition: .5s;
     }
 .logo{
-    height: 75px;
-    margin: 0;
+    height: 100px;
+    margin: .25rem 1rem;
     transition: .4s;
 }
 
@@ -436,6 +436,9 @@ img{
     flex-wrap: wrap;
     justify-content: center;
     margin: 2rem;
+    #anim{
+        background: linear-gradient(225deg, rgba(4,84,147,1) 0%,  rgba(218,102,186,1) 100%);  
+    }
 }
     .offerBtn {
         display: flex;

@@ -119,8 +119,8 @@ body {
 #offer .logo,
 #gallery .logo,
 #contact .logo {
-  height: 75px;
-  margin: 0;
+  height: 100px;
+  margin: .25rem 1rem;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -574,6 +574,10 @@ h1 {
       -ms-flex-pack: center;
           justify-content: center;
   margin: 2rem;
+}
+
+#offer .offerBoxes #anim {
+  background: linear-gradient(225deg, #045493 0%, #da66ba 100%);
 }
 
 #offer .offerBtn {
