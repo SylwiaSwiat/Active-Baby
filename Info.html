@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informacja o zapisach</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Aleo&family=Biryani:wght@200&family=Roboto:wght@100&family=Rubik+Moonrocks&display=swap');
+        body{
+            min-height: 100vh;
+            min-width: 100vw;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .box{
+          width: 100%;
+          height: 100vh;
+         background-image: url('./photos/Kółka.svg');
+         background-position: center;
+         background-size: cover;
+         background-repeat: no-repeat;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+        }
+        .info{
+            
+background: rgba(255, 255, 255, 0.8);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(5px);
+-webkit-backdrop-filter: blur(5px);
+border: 1px solid rgba(255, 255, 255, 0.3);
+  margin: 15% auto;
+  padding: 2rem;
+  border: 5px solid #d6a0c4;
+  width: 60%;
+  border-radius: 15px; 
+        }
+        .close{
+            background: transparent;
+            border: none;
+  float: right;
+  font-size: 2.5rem;
+  font-weight: bold;
+        }
+        .close a{
+            transition: ease-in-out .4s;
+        }
+        .close a:hover,
+        .close a:focus{
+            text-decoration: none;
+            color: #d6a0c4;
+            cursor: pointer;
+        }
+        p{
+            font-size: 1.25rem;
+            line-height: 150%;
+            color: #045493;
+        }
+        @media all and (max-width: 768px) {
+            p{
+                font-size: .8rem;
+            }
+        }
+       
+    </style>
+    <script src="https://kit.fontawesome.com/13f87f03f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="box">
+<div class="info">
+    <button class="close"><a href="./index.html#menu"><i class="fas fa-times"></i></a></button>
+    <p>W celu pełnej rejestracji prosimy o dokonanie przelewu w ciągu trzech dni od wypełnienia formularza: <br>
+        <br>
+        Nazwa Odbiorcy: ACTIVE BABY Patryk Martas <br>
+        Adres Odbiorcy: ul. Altanowa 1/6, 85-790 Bydgoszcz <br>
+        Numer Konta: <b>73 1090 1896 0000 0001 4940 4057</b>  <br>
+        Tytuł przelewu: Opłata lekcji pływania za miesiąc:...(dany w którym odbywają się zajęcia), imię i nazwisko uczestnika zajęć, pływalnia. <br>
+        <br>
+    W przeciwnym wypadku rezerwacja miejsca zostanie anulowana </p>
+</div>
+    </div>
+</body>
+</html>

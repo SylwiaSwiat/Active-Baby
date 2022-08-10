@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Nauka Pływania</title>
     <link rel="stylesheet" href="./style/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
@@ -44,7 +44,11 @@
        }
        #offer .offerListPools div{
         margin: 1rem;
-        width: 400px;
+        
+        display: flex;
+        justify-content: center;
+        
+        width: 100%;
        }
        #offer .offerListPools li{
         max-width: 400px;
@@ -53,7 +57,7 @@
        #offer .offerListPools li p{
         color: #045493;
         text-transform: none;
-        padding: 1rem;
+        padding: .5rem 2rem;
         border-radius: 0;
         margin-top: 1rem;
         background: white;
@@ -64,10 +68,18 @@ color: #045493;
        #offer .offerListPools li h3{
 text-transform: uppercase;
 font-weight: bold;
+background: #045493;
+padding: 1rem;
+margin: 0;
+color: white;
+font-size: 1.5rem;
+border-radius: 2px;
        }
        #gosir, #fordon{
         width: 100%;
         border-radius: 5px;
+        border: #d8a0c8 5px solid;
+        outline: #9b93c3 8px solid;
         box-shadow: 8px 4px 20px 0px rgba(66, 68, 90, 0.48) !important;
        }
        
@@ -80,6 +92,7 @@ border-radius: 5px 5px 0 0;
         font-size: 1rem;
         box-shadow:none;
         width: 100%;
+        margin: 5rem;
        }
        .transfer{
         font-size: 1rem;
@@ -101,6 +114,7 @@ width: auto;
        }
        #offer .offerBtn ul li{
         text-align: left;
+        
        }
        #offer .offerBtn p{
         padding: .5rem;
@@ -113,6 +127,16 @@ width: auto;
         }
         #offer .offerListPools li p{
             padding: 0;
+            font-size: .8rem;
+        }
+        #offer .offerListPools div{
+            flex-wrap: wrap;
+        }
+        #menu ul li{
+            padding: 0 0 1rem 0;
+        }
+        #offer ul li{
+            margin: 6rem 1rem;
         }
        }
     </style>
@@ -128,7 +152,7 @@ width: auto;
                 <ul>
                    
                     <li><a href="./index.html#menu" class="menuEl">Strona Główna</a></li>
-                    <!-- <li><a href="#about" class='menuEl'>O firmie</a> </li> -->
+                     <li><a href="./index.html#about" class='menuEl'>O nas</a> 
                     <li><a href="./index.html#offer" class="menuEl">Oferta</a> </li>
                     <li><a href="./index.html#gallery" class="menuEl">Galeria</a> </li>
                     <li><a href="#register" class="menuEl" id="registerBtn">Zapisy</a> </li>
@@ -142,23 +166,32 @@ width: auto;
             </div>
             <div id="offer" >
                     <ul class="offerListPools">
-                    <div><li id="gosir">
-                        <!-- <img src="./photos/liane-metzler-P1s57wzVCp0-unsplash.jpg" alt=""> -->
-                        <h3>Kurs wakacyjny - GOSIR Osielsko </h3>
-                   <p> Brak wolnych miejsc <br>
-                    Poniedziałek: 4 zajęcia = 160zł <br>
-                    Godziny: <br>
-                  <s> 16:00 - 16:45 <br></s> 
-                   <s>16:45 - 17:30 <br></s> 
-                   <s>17:30 - 18:15 <br></s> 
-                   <s> 18:15 - 19:00</p></s>
-                    <p>Wtorek: 5 zajęć = 200zł <br>
+                    <div class="poolBorder"><li id="fordon">
+                        <h3>AQUA FORDON </h3>
+                   <p> <b>180 - 225zł</b> <br>
+                    Czas zajęć: 45 minut <br>
+                    180zł = 4 zajęcia w miesiącu <br>
+                   225zł = 5 zajęć w miesiącu <br> 
+                   60zł = jednorazowe zajęcia </p>
+                    <p>Niedziela <br>
                         Godziny: <br>
-                      <s>17:00 - 17:45 <br></s>  
-                      <s>17:45 - 18:30 <br></s>  
-                       <s>18:30 - 19:15 <br></s> 
-                      <s>19:15 - 20:00</s>  </p>
-                    </li></div>
+                      10:00 - 10:45 (4-6 lat)<br>
+                      11:00 - 11:45 (4-6 lat) <br>
+                    12:00 - 12:45 (7-9lat) <br></p>
+                    </li>
+                    <li id="gosir">
+                        <h3>NEPTUN </h3>
+                   <p> <b>180 - 225zł</b> <br>
+                    Czas zajęć: 45 minut <br>
+                    180zł = 4 zajęcia w miesiącu <br>
+                   225zł = 5 zajęć w miesiącu <br> 
+                   60zł = jednorazowe zajęcia </p>
+                    <p>Piątek <br>
+                        Godziny: <br>
+                      16:00 - 16:45 (4-6 lat)<br>
+                      17:00 - 17:45</p>
+                    </li>
+                </div>
                   
                     </ul>
                     

@@ -62,6 +62,7 @@ body {
     li {
         font-size: 1.4rem;
         margin: 0 1rem;
+        transition: .5s;
 
         :hover {
             cursor: pointer;
@@ -258,7 +259,9 @@ border: 1px solid #382142;
     margin: 0;
     display: flex;
     justify-content: center;
-    background: white;
+    background-image: url('../photos/Kółka.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
     flex-direction: column;
 
     img{
@@ -292,7 +295,7 @@ h1 {
      margin-top: 0;
      padding-top: 0;
      text-align: center;
-     background-image: url('../photos/Bubble-4s-1084px.svg');
+   background-image: url('../photos/Kółka.svg');
      background-repeat: no-repeat;
      background-size: cover;
       
@@ -824,6 +827,7 @@ z-index: 1;
     }
 #about{
     height: 100vh;
+    background:none;
 
     img{
         height: 100vh;
@@ -840,6 +844,14 @@ z-index: 1;
         img {
             max-width: 250px;
             max-height: 250px;
+        }
+    }
+    #gallery{
+        .galleryBox{
+            .galleryPhoto{
+                max-width: 250px;
+                max-height: 250px;
+            }
         }
     }
 
