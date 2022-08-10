@@ -36,14 +36,14 @@
         max-height: 50px;
        }
        #offer .offerListPools {
-        margin: 4rem 2rem 1rem 2rem;
+        margin: 6rem 2rem 1rem 2rem;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         align-items: center;
        }
        #offer .offerListPools div{
-        margin: 1rem;
+        margin: 1.75rem;
         
         display: flex;
         justify-content: center;
@@ -51,23 +51,28 @@
         width: 100%;
        }
        #offer .offerListPools li{
-        max-width: 400px;
+        width: 300px;
         background: white;
+        display: flex;
+        flex-direction: column;
        }
        #offer .offerListPools li p{
         color: #045493;
         text-transform: none;
-        padding: .5rem 2rem;
+        padding: .5rem 2rem .5rem 3rem;
         border-radius: 0;
         margin-top: 1rem;
         background: white;
+        line-height: 200%;
+        text-align: left;
        }
        #offer .offerListPools li p:hover{
 color: #045493;
        }
        #offer .offerListPools li h3{
+        letter-spacing: 3px;
 text-transform: uppercase;
-font-weight: bold;
+font-family: 'Alfa Slab One', cursive;
 background: #045493;
 padding: 1rem;
 margin: 0;
@@ -75,6 +80,7 @@ color: white;
 font-size: 1.5rem;
 border-radius: 2px;
        }
+       
        #gosir, #fordon{
         width: 100%;
         border-radius: 5px;
@@ -92,7 +98,7 @@ border-radius: 5px 5px 0 0;
         font-size: 1rem;
         box-shadow:none;
         width: 100%;
-        margin: 5rem;
+        margin: 2.5rem;
        }
        .transfer{
         font-size: 1rem;
@@ -120,14 +126,36 @@ width: auto;
         padding: .5rem;
         color: #045493;
        }
+       .price{
+        letter-spacing: 3px;
+text-transform: uppercase;
+font-family: 'Alfa Slab One', cursive;
+background: #d8a0c8;
+padding: 1rem;
+margin: 0.25rem;
+color: white;
+font-size: 1rem;
+border-radius: 2px;
+width: 100%;
+flex-wrap: nowrap;
+border-radius: 5px;
+border: 1px solid #9b93c3;
+text-align: center;
+       }
+       .price:hover{
+        color: white !important;
+       }
        @media all and (max-width: 768px) {
         #offer .offerListPools{
             width: 100%;
             margin-top: 2rem;
         }
+        #offer .offerListPools li{
+            width: 250px;
+        }
         #offer .offerListPools li p{
-            padding: 0;
             font-size: .8rem;
+            padding: .5rem 2rem;
         }
         #offer .offerListPools div{
             flex-wrap: wrap;
@@ -168,26 +196,27 @@ width: auto;
                     <ul class="offerListPools">
                     <div class="poolBorder"><li id="fordon">
                         <h3>AQUA FORDON </h3>
-                   <p> <b>180 - 225zł</b> <br>
+                        
+                   <p>  <strong class="price">180 - 225zł</strong> <br>
+                    <br>
                     Czas zajęć: 45 minut <br>
                     180zł = 4 zajęcia w miesiącu <br>
                    225zł = 5 zajęć w miesiącu <br> 
                    60zł = jednorazowe zajęcia </p>
-                    <p>Niedziela <br>
-                        Godziny: <br>
+                    <p><strong>Niedziela</strong>  <br>
                       10:00 - 10:45 (4-6 lat)<br>
                       11:00 - 11:45 (4-6 lat) <br>
                     12:00 - 12:45 (7-9lat) <br></p>
                     </li>
                     <li id="gosir">
                         <h3>NEPTUN </h3>
-                   <p> <b>180 - 225zł</b> <br>
+                   <p> <strong class="price">180 - 225zł</strong> <br>
+                    <br>
                     Czas zajęć: 45 minut <br>
                     180zł = 4 zajęcia w miesiącu <br>
                    225zł = 5 zajęć w miesiącu <br> 
                    60zł = jednorazowe zajęcia </p>
-                    <p>Piątek <br>
-                        Godziny: <br>
+                    <p> <strong>Piątek</strong> <br>
                       16:00 - 16:45 (4-6 lat)<br>
                       17:00 - 17:45</p>
                     </li>

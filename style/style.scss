@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Biryani:wght@200&family=Roboto:wght@100&family=Rubik+Moonrocks&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aleo&family=Alfa+Slab+One&family=Biryani:wght@200&family=Roboto:wght@100&family=Rubik+Moonrocks&display=swap');
 $pink:#d6a0c4;
 $lighterPink: #d8a0c8;
 $lighterViolet: #ba9cc4;
@@ -280,9 +280,10 @@ max-width: 100vw;
 
 h1 {
     font-size: 3.5rem;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Alfa Slab One', cursive;
     margin: 1.5rem;
     color: $navy;
+    letter-spacing: 5px;
 }
 
 #offer {
@@ -298,6 +299,9 @@ h1 {
    background-image: url('../photos/Kółka.svg');
      background-repeat: no-repeat;
      background-size: cover;
+     h1{
+        background-color: white;
+     }
       
      
     ul {
@@ -479,9 +483,10 @@ img{
     justify-content: center;
     h1 {
         font-size: 3.5rem;
-        font-family: 'Roboto', sans-serif;
+        font-family: 'Alfa Slab One', cursive;
        text-align: center;
        color: white;
+       letter-spacing: 5px;
     }
 
     .galleryBox {
