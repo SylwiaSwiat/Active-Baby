@@ -751,24 +751,29 @@ h1 {
   -webkit-box-shadow: 8px 4px 14px 0px rgba(66, 68, 90, 0.25);
           box-shadow: 8px 4px 14px 0px rgba(66, 68, 90, 0.25);
   border: 1px solid #ba9cc4;
+  margin-top: 8rem;
+  margin-bottom: 2rem;
 }
 
 #contact .contactBox p,
-#contact .contactBox h4 {
+#contact .contactBox h2,
+#contact .contactBox h5 {
   font-size: 1.5rem;
   color: #2c64ab;
   padding: .9rem .5rem;
 }
 
 #contact .contactBox p i,
-#contact .contactBox h4 i {
+#contact .contactBox h2 i,
+#contact .contactBox h5 i {
   color: #a694c4;
   margin: .5rem;
   font-size: 2rem;
 }
 
 #contact .contactBox p a,
-#contact .contactBox h4 a {
+#contact .contactBox h2 a,
+#contact .contactBox h5 a {
   color: #2c64ab;
 }
 
@@ -1157,6 +1162,12 @@ footer .footerBox .copy {
   #contact .contactBox {
     width: 80%;
     padding: .5rem;
+  }
+  #contact .contactBox h2 {
+    font-size: 1.3rem;
+  }
+  #contact .contactBox h5 {
+    font-size: 1rem;
   }
   #contact .contactBox p {
     font-size: 1rem;

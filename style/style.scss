@@ -543,8 +543,11 @@ padding: 1rem;
         border-radius: 9px;
         box-shadow: 8px 4px 14px 0px rgba(66, 68, 90, 0.25);
 border:1px solid $lighterViolet ;
+margin-top: 8rem;
+margin-bottom: 2rem;
         p,
-        h4 {
+        h2,
+        h5 {
             font-size: 1.5rem;
             color: $lightNavy;
             padding: .9rem .5rem;
@@ -893,6 +896,12 @@ z-index: 1;
         
         width: 80%;
         padding: .5rem;
+        h2{
+            font-size: 1.3rem;
+        }
+        h5{
+            font-size: 1rem;
+        }
         p{
             font-size: 1rem;
         }
