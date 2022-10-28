@@ -545,17 +545,20 @@ padding: 1rem;
 border:1px solid $lighterViolet ;
 margin-top: 8rem;
 margin-bottom: 2rem;
+h2{
+    font-size: 1.5rem;
+            color: $lightNavy;
+            padding:0;
+}
         p,
-        h2,
         h5 {
             font-size: 1.5rem;
             color: $lightNavy;
-            padding: .9rem .5rem;
+            padding: .5rem;
 
             i {
                 color: $violet;
                 margin: .5rem;
-                font-size: 2rem;
             }
 
             a {

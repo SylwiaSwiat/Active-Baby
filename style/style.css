@@ -755,24 +755,26 @@ h1 {
   margin-bottom: 2rem;
 }
 
+#contact .contactBox h2 {
+  font-size: 1.5rem;
+  color: #2c64ab;
+  padding: 0;
+}
+
 #contact .contactBox p,
-#contact .contactBox h2,
 #contact .contactBox h5 {
   font-size: 1.5rem;
   color: #2c64ab;
-  padding: .9rem .5rem;
+  padding: .5rem;
 }
 
 #contact .contactBox p i,
-#contact .contactBox h2 i,
 #contact .contactBox h5 i {
   color: #a694c4;
   margin: .5rem;
-  font-size: 2rem;
 }
 
 #contact .contactBox p a,
-#contact .contactBox h2 a,
 #contact .contactBox h5 a {
   color: #2c64ab;
 }
